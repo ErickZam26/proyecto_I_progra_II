@@ -1,8 +1,8 @@
 #pragma once
 #include "Modelo.h"
-#include "MenuPersonas.h"
+#include "MenuColaboradores.h"
 #include "MenuPrincipal.h"
-#include "MenuRentar.h"
+
 
 class MenuPersonas;
 class MenuPrincipal;
@@ -15,14 +15,14 @@ private:
 	MenuPrincipal* menuPrincipal;
 public:
 	Control();
-	virtual void agregar(Persona*);
-	virtual void rentar(string, string);
-	virtual void regresar(string, string);
-	virtual Persona* buscarPersona(string);
+	virtual void agregar(Colaborador*);
+	/*virtual void rentar(string, string);
+	virtual void regresar(string, string);*/
+	virtual Colaborador* buscarPersona(string);
 	//
 	virtual void mostrarMenuPersona();
 	virtual void mostrarMenuPrincipal();
-	virtual void mostrarMenuRenta(Persona*);
+	virtual void mostrarMenuRenta(Colaborador*);
 };
 
 

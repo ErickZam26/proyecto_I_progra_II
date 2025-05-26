@@ -17,7 +17,10 @@ public:
 	virtual string toString() const override;
 	virtual IIterador* getIterador() const override;
 	virtual void agregarFinal(ObjectAdaptador* dato);
-
+	virtual void remover(ObjectAdaptador*);
 	virtual bool vacio() const;
+private:
+	virtual Nodo* remover(Nodo*, ObjectAdaptador*);
+
 };
 

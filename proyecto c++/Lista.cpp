@@ -104,6 +104,10 @@ IIterador* Lista::getIterador() const {
 bool Lista::vacio() const {
     return root == NULL;
 }
+void Lista::remover(ObjectAdaptador* dato) {
+    root = remover(root, dato);
+}
+
 
 void Lista::agregarFinal(ObjectAdaptador* dato) {
     if (vacio()) {
@@ -116,4 +120,17 @@ void Lista::agregarFinal(ObjectAdaptador* dato) {
         }
         actual->setSiguiente(new Nodo(dato));
     }
+}
+
+
+Nodo* Lista::remover(Nodo* actual , ObjectAdaptador* dato)
+{
+    if (actual == NULL) {
+        return NULL;
+    }
+    else if (actual->getDato()->equals(dato)) {
+        return actual->getSiguiente();
+    }
+    actual->setSiguiente(remover(actual->getSiguiente(), dato));
+    return actual;
 }

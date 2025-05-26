@@ -149,6 +149,7 @@
     <ClCompile Include="Lista.cpp" />
     <ClCompile Include="ListaColaboradores.cpp" />
     <ClCompile Include="MenuColaboradores.cpp" />
+    <ClCompile Include="MenuPrincipal.cpp" />
     <ClCompile Include="Modelo.cpp" />
     <ClCompile Include="Nodo.cpp" />
     <ClCompile Include="NodoColaborador.cpp" />
@@ -182,6 +183,7 @@
     <ClInclude Include="Lista.h" />
     <ClInclude Include="ListaColaboradores.h" />
     <ClInclude Include="MenuColaboradores.h" />
+    <ClInclude Include="MenuPrincipal.h" />
     <ClInclude Include="Modelo.h" />
     <ClInclude Include="Nodo.h" />
     <ClInclude Include="NodoColaborador.h" />

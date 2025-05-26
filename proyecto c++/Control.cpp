@@ -2,32 +2,30 @@
 
 Control::Control() {
 	datos = Modelo::getInstancia();
-	menuPersonas = new MenuPersonas(this);
+	menuPersonas = new MenuColaboradores(this);
 	menuPrincipal = new MenuPrincipal(this);
 }
 
-void Control::agregar(Persona* p) {
+void Control::agregar(Colaborador* p) {
 	datos->agregar(p);
 }
 
-void Control::agregar(Libro* l) {
-	datos->agregar(l);
-}
 
-void Control::rentar(string cedula, string sku) {
-	datos->rentar(cedula, sku);
-}
 
-void Control::regresar(string cedula, string sku) {
-	datos->regresar(cedula, sku);
-}
+//void Control::rentar(string cedula, string sku) {
+//	datos->rentar(cedula, sku);
+//}
+//
+//void Control::regresar(string cedula, string sku) {
+//	datos->regresar(cedula, sku);
+//}
 
-Persona* Control::buscarPersona(string cedula) {
-	return datos->buscarPersona(cedula);
+Colaborador* Control::buscarPersona(string cedula) {
+	return datos->buscarColaborador(cedula);
 }
 
 void Control::mostrarMenuPersona() {
-	menuPersonas->show();
+	MenuColaboradores->show();
 }
 
 

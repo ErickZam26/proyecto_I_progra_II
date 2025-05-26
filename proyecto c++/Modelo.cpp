@@ -17,6 +17,6 @@ void Modelo::agregar(Colaborador* c) {
 	colaboradores->agregar(c);
 }
 
-//Colaborador* Modelo::buscarColaborador(string cedula) {
-//	return colaboradores->buscar(cedula);
-//}
+Colaborador* Modelo::buscarColaborador(string cedula) {
+	return colaboradores->Buscar(cedula);
+}

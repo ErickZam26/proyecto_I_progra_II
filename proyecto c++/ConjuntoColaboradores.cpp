@@ -20,6 +20,29 @@ void ConjuntoColaboradores::agregar(Colaborador* c) {
 //    return suma / total;
 //}
 
+IIterador* ConjuntoColaboradores::getIterdor() const
+{
+    return listaColaboradores->getIterador();
+}
+
 string ConjuntoColaboradores::toString() const {
     return listaColaboradores->toString();
 }
+
+Colaborador* ConjuntoColaboradores::Buscar(string cedula) const
+{
+    IIterador* it = listaColaboradores->getIterador();
+    while (it->hasMore()) {
+        Colaborador* colaborador = (Colaborador*)it->next();
+        if (colaborador->getCedula().compare(cedula) == 0) {
+            return colaborador;
+        }
+    }
+    throw exception("Registro no encontado");
+}
+
+void ConjuntoColaboradores::remover(string cedula)
+{
+    listaColaboradores->remover(Buscar(cedula));
+}
+

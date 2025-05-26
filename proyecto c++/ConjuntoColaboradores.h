@@ -9,6 +9,9 @@ public:
 	ConjuntoColaboradores();
 	virtual void agregar(Colaborador*);
 	//virtual double promedioHora() const;
+	virtual IIterador* getIterdor()const;
 	virtual string toString() const override;
+	virtual Colaborador* Buscar(string) const;
+	virtual void remover(string);
 };
 

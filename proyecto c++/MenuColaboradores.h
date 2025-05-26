@@ -1,6 +1,7 @@
 #pragma once
 #include "Consola.h"
 #include "Control.h"
+class Control;
 class MenuColaboradores : public consola
 {
 	private:
@@ -9,5 +10,5 @@ class MenuColaboradores : public consola
 		MenuColaboradores(Control*);
 		virtual void lanzar(int) override;
 	};
-};
+
 
