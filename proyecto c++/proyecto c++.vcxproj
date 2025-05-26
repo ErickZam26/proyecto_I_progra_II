@@ -130,7 +130,6 @@
     <ClCompile Include="adminArch.cpp" />
     <ClCompile Include="Archivos.cpp" />
     <ClCompile Include="Bonificacion.cpp" />
-    <ClCompile Include="CCSS_IVM.cpp" />
     <ClCompile Include="CCSS_LPT.cpp" />
     <ClCompile Include="CCSS_SEM.cpp" />
     <ClCompile Include="Colaborador.cpp" />

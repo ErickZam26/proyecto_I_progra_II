@@ -102,9 +102,6 @@
     <ClCompile Include="DeduccionRenta.cpp">
       <Filter>Archivos de origen\Deduccion</Filter>
     </ClCompile>
-    <ClCompile Include="CCSS_IVM.cpp">
-      <Filter>Archivos de origen\Deduccion</Filter>
-    </ClCompile>
     <ClCompile Include="CCSS_LPT.cpp">
       <Filter>Archivos de origen\Deduccion</Filter>
     </ClCompile>
