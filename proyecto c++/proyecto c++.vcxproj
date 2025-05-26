@@ -158,9 +158,6 @@
     <ClInclude Include="adminArch.h" />
     <ClInclude Include="Archivos.h" />
     <ClInclude Include="Bonificacion.h" />
-    <ClInclude Include="CCSS_IVM.h" />
-    <ClInclude Include="CCSS_LPT.h" />
-    <ClInclude Include="CCSS_SEM.h" />
     <ClInclude Include="Colaborador.h" />
     <ClInclude Include="ConjuntoColaboradores.h" />
     <ClInclude Include="consola.h" />

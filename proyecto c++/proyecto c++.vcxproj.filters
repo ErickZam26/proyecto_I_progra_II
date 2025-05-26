@@ -185,15 +185,6 @@
     <ClInclude Include="ListaColaboradores.h">
       <Filter>Archivos de encabezado\Colaborador</Filter>
     </ClInclude>
-    <ClInclude Include="CCSS_IVM.h">
-      <Filter>Archivos de encabezado\Deducciones</Filter>
-    </ClInclude>
-    <ClInclude Include="CCSS_LPT.h">
-      <Filter>Archivos de encabezado\Deducciones</Filter>
-    </ClInclude>
-    <ClInclude Include="CCSS_SEM.h">
-      <Filter>Archivos de encabezado\Deducciones</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd">
