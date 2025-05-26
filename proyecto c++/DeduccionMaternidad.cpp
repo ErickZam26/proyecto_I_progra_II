@@ -4,9 +4,11 @@ DeduccionMaternidad::DeduccionMaternidad(double _porcentaje) : porcentaje(_porce
 {
 }
 
-double DeduccionMaternidad::calcular(double salarioBruto, double) const
+double DeduccionMaternidad::calcular(double salarioBase) const
 {
-	return salarioBruto * 0.5;
+	double salarioColaborador = salarioBase * 0.5;
+
+	return salarioColaborador * porcentaje;
 }
 
 string DeduccionMaternidad::obtenerNombre() const

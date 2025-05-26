@@ -102,6 +102,9 @@
     <ClCompile Include="DeduccionRenta.cpp">
       <Filter>Archivos de origen\Deduccion</Filter>
     </ClCompile>
+    <ClCompile Include="CCSS_Deduccion.cpp">
+      <Filter>Archivos de origen\Deduccion</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Archivos.h">
@@ -184,6 +187,9 @@
     </ClInclude>
     <ClInclude Include="ListaColaboradores.h">
       <Filter>Archivos de encabezado\Colaborador</Filter>
+    </ClInclude>
+    <ClInclude Include="CCSS_Deduccion.h">
+      <Filter>Archivos de encabezado\Deducciones</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -7,7 +7,7 @@ private:
     double porcentaje;
 public:
     DeduccionMaternidad(double);
-    virtual double calcular(double salarioBruto, double) const override;
+    virtual double calcular(double salarioBase) const override;
     virtual string obtenerNombre() const override;
 };
 

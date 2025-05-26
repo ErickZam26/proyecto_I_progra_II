@@ -1,12 +1,12 @@
 #include "DeduccionFija.h"
 
-DeduccionFija::DeduccionFija(double)
+DeduccionFija::DeduccionFija(double m ): monto(m)
 {
 }
 
-double DeduccionFija::calcular(double salarioBruto, double) const
+double DeduccionFija::calcular(double salarioBase) const
 {
-	return salarioBruto * monto;
+	return salarioBase * monto;
 }
 
 string DeduccionFija::obtenerNombre() const

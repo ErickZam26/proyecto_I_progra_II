@@ -1,23 +1,27 @@
 #include "DeduccionRenta.h"
 
-double DeduccionRenta::calcular(double, double salarioNetoParcial) const
+double DeduccionRenta::calcular(double salarioBase) const
 {
-	if (salarioNetoParcial <= 922.000) {
-		return salarioNetoParcial;
+	double impuesto;
+	if (salarioBase > 4745000) {
+		impuesto += (salarioBase - 4745000) * 0.25;
+		salarioBase = 4745000;
 	}
-	else if (salarioNetoParcial >= 922001 && salarioNetoParcial <= 1352000) {
-		return salarioNetoParcial - (salarioNetoParcial * 0.10);
-	}
-	else if (salarioNetoParcial >= 1.352001 && salarioNetoParcial <= 2373000) {
-		return salarioNetoParcial - (salarioNetoParcial * 0.15);
-	}
-	else if (salarioNetoParcial >= 2373001 && salarioNetoParcial <= 4745000) {
-		return salarioNetoParcial - (salarioNetoParcial * 0.20);
-	}
-	else if (salarioNetoParcial > 4745000) {
-		return salarioNetoParcial - (4745000 * 0.25);
-
-	}
+	
+		if (salarioBase > 2373000) {
+			impuesto += (salarioBase - 2373000) * 0.20;
+			salarioBase = 2373000;
+		}
+		if (salarioBase > 1352000) {
+			impuesto += (salarioBase - 1352000) * 0.15;
+			salarioBase = 1352000;
+		}
+		if (salarioBase > 922000) {
+			impuesto += (salarioBase - 922000) * 0.10;
+			salarioBase = 922000;
+		}
+		return impuesto;
+	
 }
 
 string DeduccionRenta::obtenerNombre() const

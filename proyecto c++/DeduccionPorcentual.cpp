@@ -4,9 +4,9 @@ DeduccionPorcentual::DeduccionPorcentual(double)
 {
 }
 
-double DeduccionPorcentual::calcular(double salarioBruto, double) const
+double DeduccionPorcentual::calcular(double salarioBase) const
 {
-	return salarioBruto * (porcentaje / 100);
+	return salarioBase * (porcentaje / 100);
 }
 
 string DeduccionPorcentual::obtenerNombre() const

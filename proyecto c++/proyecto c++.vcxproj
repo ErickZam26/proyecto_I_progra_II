@@ -130,6 +130,7 @@
     <ClCompile Include="adminArch.cpp" />
     <ClCompile Include="Archivos.cpp" />
     <ClCompile Include="Bonificacion.cpp" />
+    <ClCompile Include="CCSS_Deduccion.cpp" />
     <ClCompile Include="Colaborador.cpp" />
     <ClCompile Include="ConjuntoColaboradores.cpp" />
     <ClCompile Include="consola.cpp" />
@@ -157,6 +158,7 @@
     <ClInclude Include="adminArch.h" />
     <ClInclude Include="Archivos.h" />
     <ClInclude Include="Bonificacion.h" />
+    <ClInclude Include="CCSS_Deduccion.h" />
     <ClInclude Include="Colaborador.h" />
     <ClInclude Include="ConjuntoColaboradores.h" />
     <ClInclude Include="consola.h" />
