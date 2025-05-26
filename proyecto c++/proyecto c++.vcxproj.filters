@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de origen">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Deducciones">
+      <UniqueIdentifier>{48be8850-c976-4541-ae6d-c7961afeb53b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Colaborador">
+      <UniqueIdentifier>{a764efaf-c8cf-4097-b294-e325a2c23e18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\Colaborador">
+      <UniqueIdentifier>{e499b9f5-9988-4361-b2eb-ba67463c66a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\Deduccion">
+      <UniqueIdentifier>{5e726c8c-3b6d-42e9-b469-f3a970e65fd0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Archivos.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="adminArch.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="consola.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Bonificacion.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Iobjeto.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectAdaptador.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodo.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Lista.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="IteradorLista.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Control.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Modelo.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="NodoColaborador.cpp">
+      <Filter>Archivos de origen\Colaborador</Filter>
+    </ClCompile>
+    <ClCompile Include="ListaColaboradores.cpp">
+      <Filter>Archivos de origen\Colaborador</Filter>
+    </ClCompile>
+    <ClCompile Include="ConjuntoColaboradores.cpp">
+      <Filter>Archivos de origen\Colaborador</Filter>
+    </ClCompile>
+    <ClCompile Include="Colaborador.cpp">
+      <Filter>Archivos de origen\Colaborador</Filter>
+    </ClCompile>
+    <ClCompile Include="Deduccion.cpp">
+      <Filter>Archivos de origen\Deduccion</Filter>
+    </ClCompile>
+    <ClCompile Include="DeduccionConcretaBuilder.cpp">
+      <Filter>Archivos de origen\Deduccion</Filter>
+    </ClCompile>
+    <ClCompile Include="DeduccionDirector.cpp">
+      <Filter>Archivos de origen\Deduccion</Filter>
+    </ClCompile>
+    <ClCompile Include="DeduccionEmbargos.cpp">
+      <Filter>Archivos de origen\Deduccion</Filter>
+    </ClCompile>
+    <ClCompile Include="DeduccionesBuilder.cpp">
+      <Filter>Archivos de origen\Deduccion</Filter>
+    </ClCompile>
+    <ClCompile Include="DeduccionFija.cpp">
+      <Filter>Archivos de origen\Deduccion</Filter>
+    </ClCompile>
+    <ClCompile Include="DeduccionMaternidad.cpp">
+      <Filter>Archivos de origen\Deduccion</Filter>
+    </ClCompile>
+    <ClCompile Include="DeduccionPorcentual.cpp">
+      <Filter>Archivos de origen\Deduccion</Filter>
+    </ClCompile>
+    <ClCompile Include="DeduccionRenta.cpp">
+      <Filter>Archivos de origen\Deduccion</Filter>
+    </ClCompile>
+    <ClCompile Include="CCSS_IVM.cpp">
+      <Filter>Archivos de origen\Deduccion</Filter>
+    </ClCompile>
+    <ClCompile Include="CCSS_LPT.cpp">
+      <Filter>Archivos de origen\Deduccion</Filter>
+    </ClCompile>
+    <ClCompile Include="CCSS_SEM.cpp">
+      <Filter>Archivos de origen\Deduccion</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Archivos.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="adminArch.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="consola.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Bonificacion.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Iobjeto.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectAdaptador.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodo.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Lista.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="IColeccion.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="IIterador.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="IEnumerable.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="IteradorLista.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Control.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Modelo.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="DeduccionEmbargos.h">
+      <Filter>Archivos de encabezado\Deducciones</Filter>
+    </ClInclude>
+    <ClInclude Include="Deduccion.h">
+      <Filter>Archivos de encabezado\Deducciones</Filter>
+    </ClInclude>
+    <ClInclude Include="DeduccionDirector.h">
+      <Filter>Archivos de encabezado\Deducciones</Filter>
+    </ClInclude>
+    <ClInclude Include="DeduccionConcretaBuilder.h">
+      <Filter>Archivos de encabezado\Deducciones</Filter>
+    </ClInclude>
+    <ClInclude Include="DeduccionFija.h">
+      <Filter>Archivos de encabezado\Deducciones</Filter>
+    </ClInclude>
+    <ClInclude Include="DeduccionesBuilder.h">
+      <Filter>Archivos de encabezado\Deducciones</Filter>
+    </ClInclude>
+    <ClInclude Include="DeduccionMaternidad.h">
+      <Filter>Archivos de encabezado\Deducciones</Filter>
+    </ClInclude>
+    <ClInclude Include="DeduccionRenta.h">
+      <Filter>Archivos de encabezado\Deducciones</Filter>
+    </ClInclude>
+    <ClInclude Include="DeduccionPorcentual.h">
+      <Filter>Archivos de encabezado\Deducciones</Filter>
+    </ClInclude>
+    <ClInclude Include="NodoColaborador.h">
+      <Filter>Archivos de encabezado\Colaborador</Filter>
+    </ClInclude>
+    <ClInclude Include="Colaborador.h">
+      <Filter>Archivos de encabezado\Colaborador</Filter>
+    </ClInclude>
+    <ClInclude Include="ConjuntoColaboradores.h">
+      <Filter>Archivos de encabezado\Colaborador</Filter>
+    </ClInclude>
+    <ClInclude Include="ListaColaboradores.h">
+      <Filter>Archivos de encabezado\Colaborador</Filter>
+    </ClInclude>
+    <ClInclude Include="CCSS_IVM.h">
+      <Filter>Archivos de encabezado\Deducciones</Filter>
+    </ClInclude>
+    <ClInclude Include="CCSS_LPT.h">
+      <Filter>Archivos de encabezado\Deducciones</Filter>
+    </ClInclude>
+    <ClInclude Include="CCSS_SEM.h">
+      <Filter>Archivos de encabezado\Deducciones</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd">
+      <Filter>Archivos de recursos</Filter>
+    </None>
+  </ItemGroup>
+</Project>
