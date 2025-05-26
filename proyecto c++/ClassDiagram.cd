@@ -92,7 +92,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="DeduccionDirector" Collapsed="true">
-    <Position X="19.5" Y="1.5" Width="1.5" />
+    <Position X="21.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAIACAAAAAIACECAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>DeduccionDirector.h</FileName>
@@ -148,7 +148,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ListaColaboradores" Collapsed="true">
-    <Position X="21.25" Y="1.5" Width="1.5" />
+    <Position X="23" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAAAABAAAAAAAAAACAgAAAgAAAAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>ListaColaboradores.h</FileName>
@@ -162,7 +162,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="NodoColaborador" Collapsed="true">
-    <Position X="23" Y="1.5" Width="1.5" />
+    <Position X="21.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAASAAAAAAAAAAQAAAAAAAAAAYAAQAgABAAAAAAAAAA=</HashCode>
       <FileName>NodoColaborador.h</FileName>
@@ -173,6 +173,20 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ObjectAdaptador.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="consola" Collapsed="true">
+    <Position X="19.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAIBAABAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>consola.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Modelo" Collapsed="true">
+    <Position X="19.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABABAAAAAAAAAAAAACAAAAAAAAAAAAAEAAgABAAAAAA=</HashCode>
+      <FileName>Modelo.h</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
