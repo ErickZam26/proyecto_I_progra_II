@@ -16,7 +16,8 @@ public:
 	virtual ObjectAdaptador* get(int) const override;
 	virtual string toString() const override;
 	virtual IIterador* getIterador() const override;
-	//
+	virtual void agregarFinal(ObjectAdaptador* dato);
+
 	virtual bool vacio() const;
 };
 

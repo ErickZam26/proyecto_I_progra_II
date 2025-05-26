@@ -7,12 +7,38 @@
 #include "adminArch.h"
 #include "DeduccionDirector.h"
 #include "DeduccionConcretaBuilder.h"
+#include "Lista.h"
+#
 
 
 using namespace std;
-class consola
+class consola : public ObjectAdaptador
 {
+private:
+	Lista* listaOpciones;
+	string titulo;
+	string instrucciones;
 public:
+
+	consola();
+	virtual void setTitulo(string);
+	virtual void setInstrucciones(string);
+	virtual void agreagarOpcion(OpcionMenu*);
+	virtual void agreagarOpcion(string);
+	virtual void show();
+	
+
+	virtual void lanzar(int) = 0;
+
+	static int leerEntero(string mensaje);
+	static int leerEntero(string mensaje, int, int);
+	static double leerDouble(string mensaje);
+	static string leerString(string mensaje);
+	static void imprimir(string mensaje, bool = true);
+	static void enter();
+	static void limpiar();
+
+
 	static void menuPrincipal();
 	static Colaborador* submenu1();
 	static void submenu2();

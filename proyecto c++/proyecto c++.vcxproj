@@ -152,6 +152,7 @@
     <ClCompile Include="NodoColaborador.cpp" />
     <ClCompile Include="ObjectAdaptador.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="OpcionMenu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="adminArch.h" />
@@ -184,6 +185,7 @@
     <ClInclude Include="Nodo.h" />
     <ClInclude Include="NodoColaborador.h" />
     <ClInclude Include="ObjectAdaptador.h" />
+    <ClInclude Include="OpcionMenu.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

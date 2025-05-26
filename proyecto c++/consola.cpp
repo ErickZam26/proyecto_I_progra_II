@@ -1,8 +1,23 @@
 #include "consola.h"
+#include "OpcionMenu.h"
 
-Colaborador* colab = nullptr;
-ListaColaboradores* lista = new ListaColaboradores();
+consola::consola() {
+	listaOpciones = new Lista();
+	titulo = "";
+	instrucciones = "";
+}
 
+void consola::setTitulo(string t) {
+	titulo = t;
+}
+
+void consola::setInstrucciones(string i) {
+	instrucciones = i;
+}
+
+void consola::agreagarOpcion(OpcionMenu* opcion) {
+	listaOpciones->agregarFinal(opcion);
+}
 
 void consola::menuPrincipal()
 {

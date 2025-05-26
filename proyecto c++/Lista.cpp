@@ -104,3 +104,16 @@ IIterador* Lista::getIterador() const {
 bool Lista::vacio() const {
     return root == NULL;
 }
+
+void Lista::agregarFinal(ObjectAdaptador* dato) {
+    if (vacio()) {
+        agregar(dato);
+    }
+    else {
+        Nodo* actual = root;
+        while (actual->getSiguiente() != NULL) {
+            actual = actual->getSiguiente();
+        }
+        actual->setSiguiente(new Nodo(dato));
+    }
+}
