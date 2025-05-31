@@ -4,14 +4,12 @@
 #include "MenuPrincipal.h"
 
 
-class MenuPersonas;
-class MenuPrincipal;
-class MenuRentar;
+
 
 class Control {
 private:
 	Modelo* datos;
-	MenuPersonas* menuPersonas;
+	MenuColaboradores* menucolaboradores;
 	MenuPrincipal* menuPrincipal;
 public:
 	Control();

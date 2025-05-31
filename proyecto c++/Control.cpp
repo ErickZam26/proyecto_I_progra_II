@@ -32,8 +32,8 @@ void Control::mostrarMenuPersona() {
 void Control::mostrarMenuPrincipal() {
 	menuPrincipal->show();
 }
-
-void Control::mostrarMenuRenta(Persona* p) {
-	MenuRentar* menu = new MenuRentar(this, p);
-	menu->show();
-}
+//
+//void Control::mostrarMenuRenta(Persona* p) {
+//	MenuRentar* menu = new MenuRentar(this, p);
+//	menu->show();
+//}

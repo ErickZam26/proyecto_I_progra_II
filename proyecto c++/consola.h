@@ -8,7 +8,7 @@
 #include "DeduccionDirector.h"
 #include "DeduccionConcretaBuilder.h"
 #include "Lista.h"
-#
+#include "OpcionMenu.h"
 
 
 using namespace std;
@@ -24,7 +24,6 @@ public:
 	virtual void setTitulo(string);
 	virtual void setInstrucciones(string);
 	virtual void agreagarOpcion(OpcionMenu*);
-	virtual void agreagarOpcion(string);
 	virtual void show();
 	
 
