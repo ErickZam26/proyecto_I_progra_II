@@ -16,8 +16,8 @@ void consola::setInstrucciones(string i) {
 	instrucciones = i;
 }
 
-void consola::agreagarOpcion(OpcionMenu* opcion) {
-	listaOpciones->agregarFinal(opcion);
+void consola::agregarOpcion(string texto) {
+	listaOpciones->agregarFinal(new OpcionMenu(texto));
 }
 
 
@@ -40,47 +40,6 @@ void consola::show() {
 	r << "Indique un numero entre 1 y " << listaOpciones->size() << "\n";
 	lanzar(leerEntero(r.str(), 1, listaOpciones->size()));
 
-}
-
-void consola::menuPrincipal()
-{
-	int n;
-	do {
-		cout << "----------------------" << endl;
-		cout << "    MENU PRINCIPAL    " << endl;
-		cout << "----------------------" << endl;
-
-		cout << "1) Registro de empleados" << endl;
-		cout << "2) Bonificaciones  y deducciones" << endl;
-		cout << "3) Generacion de plantilla por periodo" << endl;
-		cout << "4) Guardar Datos" << endl;
-		cout << "0) Salir" << endl << endl;
-	
-	
-	cout << "Ingrese opcion: ";
-	cin >> n;
-
-	switch (n)
-		{
-		case 1:
-			colab = submenu1();
-			break;
-
-		case 2:
-			submenu2();
-			break;
-		case 3:
-			submenu3();
-			break;
-		case 4:
-			submenu4();
-			break;
-		case 0:
-			break;
-		}
-	system("cls");
-	} while (n != 0);
-		
 }
 
 Colaborador* consola::submenu1()

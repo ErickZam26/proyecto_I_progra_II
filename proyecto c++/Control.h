@@ -16,11 +16,10 @@ public:
 	virtual void agregar(Colaborador*);
 	/*virtual void rentar(string, string);
 	virtual void regresar(string, string);*/
-	virtual Colaborador* buscarPersona(string);
+	virtual Colaborador* buscarColaborador(string);
 	//
 	virtual void mostrarMenuPersona();
 	virtual void mostrarMenuPrincipal();
-	virtual void mostrarMenuRenta(Colaborador*);
-};
+	virtual void 
 
 

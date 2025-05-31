@@ -15,7 +15,7 @@ MenuPrincipal::MenuPrincipal(Control* _gestor) {
 
 void MenuPrincipal::lanzar(int pos) {
 	if (pos == 1) {
-		gestor->mostrarMenuColaboradores();
+		gestor->
 	}
 	else if (pos == 2) {
 
