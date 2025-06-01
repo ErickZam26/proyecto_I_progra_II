@@ -28,6 +28,12 @@
     <Filter Include="Factory">
       <UniqueIdentifier>{71ec7408-2fec-4fc2-a97c-26f83043051a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\Menus">
+      <UniqueIdentifier>{e983e6bb-4222-4bb3-8de9-942b0053bfef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\Menus">
+      <UniqueIdentifier>{7f7ff2cb-6d32-48be-8074-b7cd177daa5b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -108,12 +114,6 @@
     <ClCompile Include="CCSS_Deduccion.cpp">
       <Filter>Archivos de origen\Deduccion</Filter>
     </ClCompile>
-    <ClCompile Include="MenuColaboradores.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="MenuPrincipal.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
     <ClCompile Include="OpcionMenu.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
@@ -122,6 +122,15 @@
     </ClCompile>
     <ClCompile Include="FactoryDeduccion.cpp">
       <Filter>Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuColaboradores.cpp">
+      <Filter>Archivos de origen\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuPrincipal.cpp">
+      <Filter>Archivos de origen\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuDeducciones.cpp">
+      <Filter>Archivos de origen\Menus</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -209,12 +218,6 @@
     <ClInclude Include="CCSS_Deduccion.h">
       <Filter>Archivos de encabezado\Deducciones</Filter>
     </ClInclude>
-    <ClInclude Include="MenuColaboradores.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="MenuPrincipal.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="OpcionMenu.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
@@ -223,6 +226,15 @@
     </ClInclude>
     <ClInclude Include="FactoryDeduccion.h">
       <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuColaboradores.h">
+      <Filter>Archivos de encabezado\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuPrincipal.h">
+      <Filter>Archivos de encabezado\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuDeducciones.h">
+      <Filter>Archivos de encabezado\Menus</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

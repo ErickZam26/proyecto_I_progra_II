@@ -22,7 +22,7 @@ string Colaborador::getPuesto()
     return puesto;
 }
 
-int Colaborador::getSalarioBase()
+float Colaborador::getSalarioBase()
 {
     return salarioBase;
 }

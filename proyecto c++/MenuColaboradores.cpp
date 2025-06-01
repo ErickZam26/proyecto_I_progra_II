@@ -1,6 +1,6 @@
 #include "MenuColaboradores.h" 
 
-MenuColaboradores::MenuColaboradores(Control* nuevoGestor) : consola() {  
+MenuColaboradores::MenuColaboradores(Control* nuevoGestor) : consola() {
    gestor = nuevoGestor;  
 
    consola::setTitulo("ADMINISTRACION DE PERSONAS");  
@@ -13,14 +13,17 @@ MenuColaboradores::MenuColaboradores(Control* nuevoGestor) : consola() {
    agregarOpcion(new OpcionMenu("Regresar al menu"));  
 }  
 
+
+
 void MenuColaboradores::lanzar(int posicion) {  
    if (posicion == 1) {  
        try {  
            imprimir("Creando persona");  
-           string cedula = consola::leerString("Por favor, digitar cedula:");  
-           string nombre = consola::leerString("Por favor, digitar nombre:"); 
-		   double saldo_base = consola::leerDouble("Por favor, digitar el saldo base:");
-           gestor->agregar(new Colaborador(nombre, cedula));  
+           string nombre = consola::leerString("Por favor, digitar nombre:");
+           string id = consola::leerString("Por favor, digitar cedula:");  
+		   string puesto = consola::leerString("Por favor, digitar puesto:");
+		   double salarioBase = consola::leerDouble("Por favor, digitar el saldo base:");
+           gestor->agregar(new Colaborador(nombre, id, puesto, salarioBase));  
        }  
        catch (exception& ex) {  
            consola::imprimir(ex.what());  

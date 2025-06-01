@@ -4,10 +4,11 @@
 #include "MenuPrincipal.h"
 
 
+
 class Control {
 private:
 	Modelo* datos;
-	MenuColaboradores* menucolaboradores;
+	MenuColaboradores* menuColaboradores;
 	MenuPrincipal* menuPrincipal;
 public:
 	Control();
@@ -19,4 +20,5 @@ public:
 	virtual void mostrarMenuPersona();
 	virtual void mostrarMenuPrincipal();
 
+};
 

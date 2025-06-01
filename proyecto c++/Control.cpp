@@ -2,7 +2,7 @@
 
 Control::Control() {
 	datos = Modelo::getInstancia();
-	menuPersonas = new MenuColaboradores(this);
+	menuColaboradores = new MenuColaboradores(this);
 	menuPrincipal = new MenuPrincipal(this);
 }
 
@@ -20,9 +20,9 @@ void Control::agregar(Colaborador* p) {
 //	datos->regresar(cedula, sku);
 //}
 
-Colaborador* Control::buscarPersona(string cedula) {
-	return datos->buscarColaborador(cedula);
-}
+//Colaborador* Control::buscarPersona(string cedula) {
+//	return datos->buscarColaborador(cedula);
+//}
 
 void Control::mostrarMenuPersona() {
 	MenuColaboradores->show();
