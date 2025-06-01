@@ -23,7 +23,7 @@ public:
 	consola();
 	virtual void setTitulo(string);
 	virtual void setInstrucciones(string);
-	//virtual void agreagarOpcion(OpcionMenu*);
+	virtual void agregarOpcion(OpcionMenu*);
 	//void Consola::agreagarOpcion(string texto) {
 	virtual void agregarOpcion(string texto);
 	virtual void show();

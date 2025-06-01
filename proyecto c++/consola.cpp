@@ -21,6 +21,11 @@ void consola::agregarOpcion(string texto) {
 }
 
 
+void consola::agregarOpcion(OpcionMenu* opcion) {
+	listaOpciones->agregarFinal(opcion);
+}
+
+
 void consola::show() {
 
 	limpiar();
@@ -42,23 +47,23 @@ void consola::show() {
 
 }
 
-Colaborador* consola::submenu1()
-{
-	system("cls");
-	Colaborador* colab = nullptr;
-	string nombre, id, puesto;
-	float salarioBase;
-
-	cout << "Ingresar el nombre del colaborador\t\t:  "; cin >> nombre;
-	cout << "Ingresar el ID del colaborador\t\t\t:  "; cin >> id;
-	cout << "Ingresar el puesto del colaborador\t\t:  "; cin >> puesto;
-	cout << "Ingresar el salario base del colaborador\t:  "; cin >> salarioBase;
-	// Validar que el ID no exista
-
-	colab = new Colaborador(nombre, id, puesto, salarioBase);
-	return colab;
-	//guardar colab en lista generica
-}
+//Colaborador* consola::submenu1()
+//{
+//	system("cls");
+//	Colaborador* colab = nullptr;
+//	string nombre, id, puesto;
+//	float salarioBase;
+//
+//	cout << "Ingresar el nombre del colaborador\t\t:  "; cin >> nombre;
+//	cout << "Ingresar el ID del colaborador\t\t\t:  "; cin >> id;
+//	cout << "Ingresar el puesto del colaborador\t\t:  "; cin >> puesto;
+//	cout << "Ingresar el salario base del colaborador\t:  "; cin >> salarioBase;
+//	// Validar que el ID no exista
+//
+//	colab = new Colaborador(nombre, id, puesto, salarioBase);
+//	return colab;
+//	//guardar colab en lista generica
+//}
 
 
 int consola::leerEntero(string mensaje) {

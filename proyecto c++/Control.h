@@ -4,8 +4,6 @@
 #include "MenuPrincipal.h"
 
 
-
-
 class Control {
 private:
 	Modelo* datos;
@@ -20,6 +18,5 @@ public:
 	//
 	virtual void mostrarMenuPersona();
 	virtual void mostrarMenuPrincipal();
-	virtual void 
 
 

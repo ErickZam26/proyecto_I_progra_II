@@ -20,12 +20,12 @@ public:
 	string getNombre();
 	string getCedula();
 	string getPuesto();
-	int getSalarioBase();
+	float getSalarioBase();
 
 	void setNombre(string _nombre);
 	void setCedula(string _cedula);
 	void setPuesto(string _puesto);
-	void setSalarioBase(int _salarioBase);
+	void setSalarioBase(float _salarioBase);
 
 	 string toString();
 

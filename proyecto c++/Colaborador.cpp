@@ -42,7 +42,7 @@ void Colaborador::setPuesto(string _puesto)
     puesto = _puesto;
 }
 
-void Colaborador::setSalarioBase(int _salarioBase)
+void Colaborador::setSalarioBase(float _salarioBase)
 {
     salarioBase = _salarioBase;
 }
