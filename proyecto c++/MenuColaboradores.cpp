@@ -26,8 +26,8 @@ void MenuColaboradores::lanzar(int posicion) {
            gestor->agregar(new Colaborador(nombre, id, puesto, salarioBase));  
        }  
        catch (exception& ex) {  
-           consola::imprimir(ex.what());  
-           consola::enter();  
+           imprimir(ex.what());
+           enter();  
        }  
        show();  
    }  
@@ -41,3 +41,4 @@ void MenuColaboradores::lanzar(int posicion) {
        gestor->mostrarMenuPrincipal();  
    }  
 }
+

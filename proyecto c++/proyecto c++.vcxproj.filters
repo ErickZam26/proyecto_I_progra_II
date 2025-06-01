@@ -34,6 +34,9 @@
     <Filter Include="Archivos de origen\Menus">
       <UniqueIdentifier>{7f7ff2cb-6d32-48be-8074-b7cd177daa5b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Ingresos">
+      <UniqueIdentifier>{a827ebbf-c26e-4215-af5c-2dc6e2bd195f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -117,9 +120,6 @@
     <ClCompile Include="OpcionMenu.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="FactoryMetod.cpp">
-      <Filter>Factory</Filter>
-    </ClCompile>
     <ClCompile Include="FactoryDeduccion.cpp">
       <Filter>Factory</Filter>
     </ClCompile>
@@ -131,6 +131,12 @@
     </ClCompile>
     <ClCompile Include="MenuDeducciones.cpp">
       <Filter>Archivos de origen\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="TipoDeducciones.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Ingresos.cpp">
+      <Filter>Ingresos</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -221,9 +227,6 @@
     <ClInclude Include="OpcionMenu.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="FactoryMetod.h">
-      <Filter>Factory</Filter>
-    </ClInclude>
     <ClInclude Include="FactoryDeduccion.h">
       <Filter>Factory</Filter>
     </ClInclude>
@@ -235,6 +238,12 @@
     </ClInclude>
     <ClInclude Include="MenuDeducciones.h">
       <Filter>Archivos de encabezado\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="TipoDeducciones.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Ingresos.h">
+      <Filter>Ingresos</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

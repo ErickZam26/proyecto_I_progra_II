@@ -6,8 +6,8 @@ class DeduccionMaternidad :
 private:
     double porcentaje;
 public:
-    DeduccionMaternidad(double);
-    virtual double calcular(double salarioBase) const override;
+    DeduccionMaternidad(double _porcentaje);
+    virtual double calcular()  const override;
     virtual string obtenerNombre() const override;
 };
 

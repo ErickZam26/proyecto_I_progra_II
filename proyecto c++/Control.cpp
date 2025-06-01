@@ -24,8 +24,13 @@ void Control::agregar(Colaborador* p) {
 //	return datos->buscarColaborador(cedula);
 //}
 
+Colaborador* Control::buscarColaborador(string cedula)
+{
+	return datos->buscarColaborador(cedula);
+}
+
 void Control::mostrarMenuPersona() {
-	MenuColaboradores->show();
+	menuColaboradores->show();
 }
 
 

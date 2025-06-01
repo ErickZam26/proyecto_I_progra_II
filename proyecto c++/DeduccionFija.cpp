@@ -1,12 +1,12 @@
 #include "DeduccionFija.h"
 
-DeduccionFija::DeduccionFija(double m ): monto(m)
+DeduccionFija::DeduccionFija(double _monto ): monto(_monto)
 {
 }
 
-double DeduccionFija::calcular(double salarioBase) const
+double DeduccionFija::calcular( ) const
 {
-	return salarioBase * monto;
+	return colab->getSalarioBase() * monto;
 }
 
 string DeduccionFija::obtenerNombre() const

@@ -2,17 +2,17 @@
 
 
 
-CCSS_Deduccion::CCSS_Deduccion()
+CCSS_Deduccion::CCSS_Deduccion() 
 {
 }
 
-double CCSS_Deduccion::calcular(double salarioBase) const
+double CCSS_Deduccion::calcular() const
 {
    double deduccionSEM = 0.50;
    double deduccionIVM = 0.0417;
    double deduccionBP = 0.01; 
    double totalDeducciones = deduccionSEM + deduccionIVM + deduccionBP;
-    return salarioBase  * totalDeducciones;
+    return colab->getSalarioBase()  * totalDeducciones;
 }
 
 string CCSS_Deduccion::obtenerNombre() const

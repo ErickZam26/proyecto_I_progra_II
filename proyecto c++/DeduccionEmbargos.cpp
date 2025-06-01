@@ -1,16 +1,16 @@
 #include "DeduccionEmbargos.h"
 
-DeduccionEmbargos::DeduccionEmbargos(double m) : monto(m)
+DeduccionEmbargos::DeduccionEmbargos(double _monto) : monto(_monto)
 {
 }
 
-double DeduccionEmbargos::calcular(double salarioBase) const
+double DeduccionEmbargos::calcular() const
 {
 	const double serviosDomesticos = 246624.4;
 	const double tasaCargosDomesticos = 0.1067;
 
-	double cargasSociales = salarioBase * monto;
-	double salarioNeto = salarioBase - cargasSociales;
+	double cargasSociales = colab->getSalarioBase() * monto;
+	double salarioNeto = colab->getSalarioBase() - cargasSociales;
 	
 	double cargarDomesticas = serviosDomesticos * tasaCargosDomesticos;
 	double sumaInembargable = serviosDomesticos - cargarDomesticas;

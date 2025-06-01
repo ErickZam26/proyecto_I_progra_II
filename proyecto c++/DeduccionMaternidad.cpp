@@ -4,9 +4,9 @@ DeduccionMaternidad::DeduccionMaternidad(double _porcentaje) : porcentaje(_porce
 {
 }
 
-double DeduccionMaternidad::calcular(double salarioBase) const
+double DeduccionMaternidad::calcular( ) const
 {
-	double salarioColaborador = salarioBase * 0.5;
+	double salarioColaborador = colab->getSalarioBase() * 0.5;
 
 	return salarioColaborador * porcentaje;
 }

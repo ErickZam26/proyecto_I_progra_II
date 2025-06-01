@@ -6,8 +6,8 @@ class DeduccionPorcentual :
 private:
     double porcentaje;
 public:
-    DeduccionPorcentual(double);
-    virtual double calcular(double salarioBase) const override;
+    DeduccionPorcentual(double _porcentaje);
+    virtual double calcular() const override;
     virtual string obtenerNombre() const override;
 };
 

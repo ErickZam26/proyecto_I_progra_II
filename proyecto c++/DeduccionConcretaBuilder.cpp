@@ -19,7 +19,7 @@ void DeduccionConcretaBuilder::expandirCapacidad()
 
 }
 
-DeduccionConcretaBuilder::DeduccionConcretaBuilder(): capacidad(10), indice(0), resultadoEntregado(false))
+DeduccionConcretaBuilder::DeduccionConcretaBuilder(): capacidad(10), indice(0), resultadoEntregado(false)
 {
 	deducciones = new Deduccion * [capacidad];
 }

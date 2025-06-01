@@ -4,6 +4,8 @@
 #include "MenuPrincipal.h"
 
 
+class MenuColaboradores;
+class MenuPrincipal;
 
 class Control {
 private:

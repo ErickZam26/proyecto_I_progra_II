@@ -1,12 +1,12 @@
 #include "DeduccionPorcentual.h"
 
-DeduccionPorcentual::DeduccionPorcentual(double)
+DeduccionPorcentual::DeduccionPorcentual(double _porcentaje): porcentaje(_porcentaje)
 {
 }
 
-double DeduccionPorcentual::calcular(double salarioBase) const
+double DeduccionPorcentual::calcular() const
 {
-	return salarioBase * (porcentaje / 100);
+	return colab->getSalarioBase() * (porcentaje / 100);
 }
 
 string DeduccionPorcentual::obtenerNombre() const

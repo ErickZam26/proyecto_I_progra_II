@@ -4,8 +4,8 @@ class DeduccionRenta :
     public Deduccion
 {
 public:
-
-    virtual double calcular(double salarioBase) const override;
+    DeduccionRenta();
+    virtual double calcular() const override;
     virtual string obtenerNombre() const override;
 };
 

@@ -1,10 +1,11 @@
 #pragma once
-#include "FactoryMetod.h"
-class FactoryDeduccion : public FactoryMetod
+#include "Deduccion.h"
+#include "TipoDeducciones.h"
+class FactoryDeduccion 
 {
 
 public:
-    virtual Deduccion* crearDeduccion(string& tipo)  const override;
-
+    static Deduccion* crearDeduccion(string& tipo);
+   /* static Deduccion* crearDeduccion1(TipoDeducciones& tipo);*/
 };
 

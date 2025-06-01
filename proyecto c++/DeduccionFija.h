@@ -6,8 +6,8 @@ private:
 	double monto;
 	
 public:
-	DeduccionFija(double);
-	virtual double calcular(double salarioBase) const override;
+	DeduccionFija(double _monto);
+	virtual double calcular() const override;
 	virtual string obtenerNombre() const override;
 };
 

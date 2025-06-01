@@ -1,8 +1,11 @@
 #include "DeduccionRenta.h"
-
-double DeduccionRenta::calcular(double salarioBase) const
+DeduccionRenta::DeduccionRenta()
 {
-	double impuesto;
+}
+double DeduccionRenta::calcular() const
+{
+	double impuesto = 0;
+	double salarioBase = colab->getSalarioBase();
 	if (salarioBase > 4745000) {
 		impuesto += (salarioBase - 4745000) * 0.25;
 		salarioBase = 4745000;
@@ -23,6 +26,8 @@ double DeduccionRenta::calcular(double salarioBase) const
 		return impuesto;
 	
 }
+
+
 
 string DeduccionRenta::obtenerNombre() const
 {

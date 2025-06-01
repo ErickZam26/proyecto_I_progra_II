@@ -39,7 +39,7 @@ public:
 	static void enter();
 	static void limpiar();
 
-	virtual void lanzar(int) = 0;
+	/*virtual void lanzar(int) = 0;*/ //  noooooo
 
 	//static void menuPrincipal();
 	//static Colaborador* submenu1();
