@@ -144,6 +144,8 @@
     <ClCompile Include="DeduccionMaternidad.cpp" />
     <ClCompile Include="DeduccionPorcentual.cpp" />
     <ClCompile Include="DeduccionRenta.cpp" />
+    <ClCompile Include="FactoryDeduccion.cpp" />
+    <ClCompile Include="FactoryMetod.cpp" />
     <ClCompile Include="Iobjeto.cpp" />
     <ClCompile Include="IteradorLista.cpp" />
     <ClCompile Include="Lista.cpp" />
@@ -175,6 +177,8 @@
     <ClInclude Include="DeduccionMaternidad.h" />
     <ClInclude Include="DeduccionPorcentual.h" />
     <ClInclude Include="DeduccionRenta.h" />
+    <ClInclude Include="FactoryDeduccion.h" />
+    <ClInclude Include="FactoryMetod.h" />
     <ClInclude Include="IColeccion.h" />
     <ClInclude Include="IEnumerable.h" />
     <ClInclude Include="IIterador.h" />

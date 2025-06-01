@@ -2,10 +2,6 @@
 #include "Deduccion.h"
 class DeduccionesBuilder
 {
-private:
-	
-
-	
 public:
 
 	virtual ~DeduccionesBuilder() = default;

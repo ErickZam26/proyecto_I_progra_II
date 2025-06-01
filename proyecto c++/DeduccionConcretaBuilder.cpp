@@ -4,9 +4,7 @@
 #include "DeduccionMaternidad.h"
 #include "DeduccionPorcentual.h"
 #include "DeduccionRenta.h"
-#include "CCSS_SEM.h"
-#include "CCSS_LPT.h"
-#include "CCSS_IVM.h"
+#include "CCSS_Deduccion.h"
 
 void DeduccionConcretaBuilder::expandirCapacidad()
 {
@@ -21,17 +19,18 @@ void DeduccionConcretaBuilder::expandirCapacidad()
 
 }
 
-DeduccionConcretaBuilder::DeduccionConcretaBuilder(Deduccion** d, int i, int c): deducciones(d), indice(i), capacidad(c)
+DeduccionConcretaBuilder::DeduccionConcretaBuilder(): capacidad(10), indice(0), resultadoEntregado(false))
 {
 	deducciones = new Deduccion * [capacidad];
 }
 
 DeduccionConcretaBuilder::~DeduccionConcretaBuilder()
 {
-	for (int i = 0; i < indice;++i) {
-		delete deducciones[i];
+	if (!resultadoEntregado) {// dado el caso que no se entrego libera la memoria
+		for (int i = 0; i < indice;++i) 
+			delete deducciones[i];
+		delete[] deducciones;
 	}
-	delete deducciones;
 }
 
 void DeduccionConcretaBuilder::reset()
@@ -54,16 +53,9 @@ void DeduccionConcretaBuilder::agregarCCSS()
 {
 	if (indice >= capacidad) {
 		expandirCapacidad();
-		deducciones[indice++] = new CCSS_SEM();
+		deducciones[indice++] = new CCSS_Deduccion();
 	}
-	if (indice >= capacidad) {
-		expandirCapacidad();
-		deducciones[indice++] = new CCSS_IVM();
-	}
-	if (indice >= capacidad) {
-		expandirCapacidad();
-		deducciones[indice++] = new CCSS_LPT();
-	}
+	
 }
 
 void DeduccionConcretaBuilder::agregarMaternidad()
@@ -101,5 +93,6 @@ Deduccion** DeduccionConcretaBuilder::obtenerResultado()
 }
 int DeduccionConcretaBuilder::obtenerCantidad()
 {
+	resultadoEntregado = true;
 	return indice;
 }

@@ -6,10 +6,11 @@ class DeduccionConcretaBuilder : public DeduccionesBuilder
 private:
     Deduccion** deducciones;
     int indice ;
-    int capacidad = 10;
+    int capacidad ;
+    bool resultadoEntregado;
     void expandirCapacidad(); //metodo para crear mas espacios
 public:
-    DeduccionConcretaBuilder(Deduccion**, int , int);
+    DeduccionConcretaBuilder();
     ~DeduccionConcretaBuilder();
     void reset() override;
 

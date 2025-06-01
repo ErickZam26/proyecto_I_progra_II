@@ -4,9 +4,6 @@
 using namespace std;
 class Deduccion
 {
-private:
-
-
 public:
 
 	virtual  double calcular(double salarioBase) const = 0;
