@@ -3,13 +3,12 @@
 MenuColaboradores::MenuColaboradores(Control* nuevoGestor) : consola() {
    gestor = nuevoGestor;  
 
-   consola::setTitulo("ADMINISTRACION DE PERSONAS");  
+   consola::setTitulo("ADMINISTRACION DE COLABORADORES");  
    consola::setInstrucciones("Por favor, leer con cuidado las siguientes opciones.");  
 
-   agregarOpcion(new OpcionMenu("Crear persona"));  
-   agregarOpcion(new OpcionMenu("Editar persona"));  
-   agregarOpcion(new OpcionMenu("Listar personas"));  
-   agregarOpcion(new OpcionMenu("Libros asociados"));  
+   agregarOpcion(new OpcionMenu("Ingresar colaborador"));  
+   agregarOpcion(new OpcionMenu("Editar colaborador"));  
+   agregarOpcion(new OpcionMenu("Ver lista de colaboradores"));  
    agregarOpcion(new OpcionMenu("Regresar al menu"));  
 }  
 
@@ -18,7 +17,7 @@ MenuColaboradores::MenuColaboradores(Control* nuevoGestor) : consola() {
 void MenuColaboradores::lanzar(int posicion) {  
    if (posicion == 1) {  
        try {  
-           imprimir("Creando persona");  
+           imprimir("Ingresando colaborador");  
            string nombre = consola::leerString("Por favor, digitar nombre:");
            string id = consola::leerString("Por favor, digitar cedula:");  
 		   string puesto = consola::leerString("Por favor, digitar puesto:");

@@ -19,7 +19,7 @@ public:
 	virtual void regresar(string, string);*/
 	virtual Colaborador* buscarColaborador(string);
 	//
-	virtual void mostrarMenuPersona();
+	virtual void mostrarMenuColaborador();
 	virtual void mostrarMenuPrincipal();
 
 };

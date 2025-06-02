@@ -29,7 +29,7 @@ Colaborador* Control::buscarColaborador(string cedula)
 	return datos->buscarColaborador(cedula);
 }
 
-void Control::mostrarMenuPersona() {
+void Control::mostrarMenuColaborador() {
 	menuColaboradores->show();
 }
 
@@ -38,7 +38,4 @@ void Control::mostrarMenuPrincipal() {
 	menuPrincipal->show();
 }
 //
-//void Control::mostrarMenuRenta(Persona* p) {
-//	MenuRentar* menu = new MenuRentar(this, p);
-//	menu->show();
-//}
+
