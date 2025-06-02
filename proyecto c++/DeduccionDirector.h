@@ -11,7 +11,11 @@ public:
 	void construirEmpleadoEmbargos(DeduccionesBuilder& builder);
 	void construirEmpleadoFija(DeduccionesBuilder& builder);
 	void construirEmpleadoPorcentual(DeduccionesBuilder& builder);
-		
+	void construirEmpleadoBonificaciones(DeduccionesBuilder& builder);
+	void construirEmpleadoHorasDobles(DeduccionesBuilder& builder);
+	void construirEmpleadoHorasExtra(DeduccionesBuilder& builder);
+	void construirEmpleadoHorasFeriado(DeduccionesBuilder& builder);
+	void construirEmpleadoHorasOrdinarias(DeduccionesBuilder& builder);
 
 
 	

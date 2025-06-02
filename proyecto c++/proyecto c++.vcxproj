@@ -129,7 +129,7 @@
   <ItemGroup>
     <ClCompile Include="adminArch.cpp" />
     <ClCompile Include="Archivos.cpp" />
-    <ClCompile Include="Bonificacion.cpp" />
+    <ClCompile Include="Bonificaciones.cpp" />
     <ClCompile Include="CCSS_Deduccion.cpp" />
     <ClCompile Include="Colaborador.cpp" />
     <ClCompile Include="ConjuntoColaboradores.cpp" />
@@ -145,6 +145,11 @@
     <ClCompile Include="DeduccionPorcentual.cpp" />
     <ClCompile Include="DeduccionRenta.cpp" />
     <ClCompile Include="FactoryDeduccion.cpp" />
+    <ClCompile Include="FactoryIngresos.cpp" />
+    <ClCompile Include="HorasDobles.cpp" />
+    <ClCompile Include="HorasExtra.cpp" />
+    <ClCompile Include="HorasFeriado.cpp" />
+    <ClCompile Include="HorasOrdinarias.cpp" />
     <ClCompile Include="Ingresos.cpp" />
     <ClCompile Include="Iobjeto.cpp" />
     <ClCompile Include="IteradorLista.cpp" />
@@ -160,11 +165,12 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="OpcionMenu.cpp" />
     <ClCompile Include="TipoDeducciones.cpp" />
+    <ClCompile Include="TipoIngreso.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="adminArch.h" />
     <ClInclude Include="Archivos.h" />
-    <ClInclude Include="Bonificacion.h" />
+    <ClInclude Include="Bonificaciones.h" />
     <ClInclude Include="CCSS_Deduccion.h" />
     <ClInclude Include="Colaborador.h" />
     <ClInclude Include="ConjuntoColaboradores.h" />
@@ -180,6 +186,11 @@
     <ClInclude Include="DeduccionPorcentual.h" />
     <ClInclude Include="DeduccionRenta.h" />
     <ClInclude Include="FactoryDeduccion.h" />
+    <ClInclude Include="FactoryIngresos.h" />
+    <ClInclude Include="HorasDobles.h" />
+    <ClInclude Include="HorasExtra.h" />
+    <ClInclude Include="HorasFeriado.h" />
+    <ClInclude Include="HorasOrdinarias.h" />
     <ClInclude Include="IColeccion.h" />
     <ClInclude Include="IEnumerable.h" />
     <ClInclude Include="IIterador.h" />
@@ -197,6 +208,7 @@
     <ClInclude Include="ObjectAdaptador.h" />
     <ClInclude Include="OpcionMenu.h" />
     <ClInclude Include="TipoDeducciones.h" />
+    <ClInclude Include="TipoIngreso.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

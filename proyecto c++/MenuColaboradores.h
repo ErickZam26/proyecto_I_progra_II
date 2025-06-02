@@ -8,7 +8,7 @@ class MenuColaboradores : public consola {
 		Control* gestor;
 	public:
 		MenuColaboradores(Control*);
-		virtual void lanzar(int) override;
+		virtual void lanzar(int ) override;
 	
 	};
 

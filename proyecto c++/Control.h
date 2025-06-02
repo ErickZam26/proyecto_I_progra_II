@@ -6,6 +6,7 @@
 
 class MenuColaboradores;
 class MenuPrincipal;
+class modelo;
 
 class Control {
 private:

@@ -5,6 +5,7 @@ class DeduccionConcretaBuilder : public DeduccionesBuilder
 {
 private:
     Deduccion** deducciones;
+    Ingresos** ingresos;
     int indice ;
     int capacidad ;
     bool resultadoEntregado;
@@ -22,5 +23,14 @@ public:
     void agregarDeduccionPorcentual(double porcentaje) override;
     Deduccion** obtenerResultado() override;
 	int obtenerCantidad() override;
+
+
+
+
+    virtual void agregarHorasDobles() override;
+    virtual void agregarHorasExtras() override;
+    virtual void agregarHorasFeriado() override;
+    virtual void agregarHorasOrdinarias() override;
+    Ingresos** obtenerResultadoI() override;
 };
 

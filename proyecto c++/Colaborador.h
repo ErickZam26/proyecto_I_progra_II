@@ -27,6 +27,6 @@ public:
 	void setPuesto(string _puesto);
 	void setSalarioBase(float _salarioBase);
 
-	 string toString();
+	string toString();
 
 };

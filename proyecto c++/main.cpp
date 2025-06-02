@@ -18,7 +18,12 @@
 
 
 int main(const int, char* []) {
-
+	/*	int opcion;*/
+	
+	/*do
+	{
+	*/
+	
 	try {
 		Control* controlAplicacion = new Control();
 		controlAplicacion->mostrarMenuPrincipal();
@@ -26,8 +31,10 @@ int main(const int, char* []) {
 	catch (exception ex) {
 		cout << ex.what() << endl;
 	}
-	cin.get();
-
+	//cout << "Desea salir del programa. (1.Continuar,2.Salir)" << endl;
+	//cin >> opcion;
+	//cin.get();
+	//} while (opcion == 1);
 	return 0;
 }
 

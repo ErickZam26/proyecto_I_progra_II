@@ -5,6 +5,13 @@
 #include "DeduccionPorcentual.h"
 #include "DeduccionRenta.h"
 #include "CCSS_Deduccion.h"
+#include "Bonificaciones.h"
+#include "HorasDobles.h"
+#include "HorasExtra.h"
+#include "HorasFeriado.h"
+#include "HorasOrdinarias.h"
+
+
 
 void DeduccionConcretaBuilder::expandirCapacidad()
 {
@@ -95,4 +102,46 @@ int DeduccionConcretaBuilder::obtenerCantidad()
 {
 	resultadoEntregado = true;
 	return indice;
+}
+
+void DeduccionConcretaBuilder::agregarHorasDobles()
+{
+	if (indice >= capacidad) {
+		expandirCapacidad();
+		ingresos[indice++] = new HorasDobles(0, nullptr);
+
+	}
+
+}
+
+void DeduccionConcretaBuilder::agregarHorasExtras()
+{
+	if (indice >= capacidad) {
+		expandirCapacidad();
+		ingresos[indice++] = new HorasExtra(0,nullptr);
+	}
+}
+
+void DeduccionConcretaBuilder::agregarHorasFeriado()
+{
+	if (indice >= capacidad) {
+		expandirCapacidad();
+		ingresos[indice++] = new HorasFeriado(0,nullptr);
+	}
+
+}
+
+void DeduccionConcretaBuilder::agregarHorasOrdinarias()
+{
+		if (indice >= capacidad) {
+			expandirCapacidad();
+			ingresos[indice++] = new HorasOrdinarias(0, nullptr);
+		}
+}
+
+
+
+Ingresos** DeduccionConcretaBuilder::obtenerResultadoI()
+{
+	return ingresos;
 }

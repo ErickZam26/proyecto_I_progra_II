@@ -46,3 +46,37 @@ void DeduccionDirector::construirEmpleadoPorcentual(DeduccionesBuilder& builder)
 	builder.agregarDeduccionPorcentual(0.08);
 
 }
+
+void DeduccionDirector::construirEmpleadoBonificaciones(DeduccionesBuilder& builder)
+{
+	builder.reset();
+	builder.agregarBonificaciones();
+
+}
+
+void DeduccionDirector::construirEmpleadoHorasDobles(DeduccionesBuilder& builder)
+{
+	builder.reset();
+	builder.agregarHorasDobles();
+
+}
+
+void DeduccionDirector::construirEmpleadoHorasExtra(DeduccionesBuilder& builder)
+{
+	builder.reset();
+	builder.agregarHorasExtras();
+	
+}
+
+void DeduccionDirector::construirEmpleadoHorasFeriado(DeduccionesBuilder& builder)
+{
+	builder.reset();
+	builder.agregarHorasFeriado();
+
+}
+
+void DeduccionDirector::construirEmpleadoHorasOrdinarias(DeduccionesBuilder& builder)
+{
+	builder.reset();
+	builder.agregarHorasOrdinarias();
+}

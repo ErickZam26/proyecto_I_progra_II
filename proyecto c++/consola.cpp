@@ -44,7 +44,7 @@ void consola::show() {
 	stringstream r;
 	r << "Indique un numero entre 1 y " << listaOpciones->size() << "\n";
 	lanzar(leerEntero(r.str(), 1, listaOpciones->size()));
-
+	
 }
 
 
