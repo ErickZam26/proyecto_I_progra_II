@@ -14,8 +14,6 @@ MenuColaboradores::MenuColaboradores(Control* nuevoGestor) : consola() {
    agregarOpcion(new OpcionMenu("Regresar al menu"));  
 }  
 
-
-
 void MenuColaboradores::lanzar(int posicion) {  
    try {  
        switch (posicion) {  
@@ -30,24 +28,41 @@ void MenuColaboradores::lanzar(int posicion) {
            }  
            case 2: {  
                imprimir("Editando persona");
-			   string id = leerString("Por favor, digitar cedula del colaborador a editar:");
-			   Colaborador* colaborador = gestor->buscarColaborador(id);
-			   if (colaborador == nullptr) {
-				   imprimir("Colaborador no encontrado");
-				   enter();
-				   break;
-			   }
-			   string nuevoNombre = leerString("Por favor, digitar nuevo nombre:");
-			   string nuevoPuesto = leerString("Por favor, digitar nuevo puesto:");
-			   float nuevoSalarioBase = leerFloat("Por fafloatvor, digitar nuevo salario base:");
-			   colaborador->setNombre(nuevoNombre);
-			   colaborador->setPuesto(nuevoPuesto);
-			   colaborador->setSalarioBase(nuevoSalarioBase);
-			   gestor->actualizar(colaborador);
-               // verificar funcionalidad despues
-			   imprimir("Colaborador actualizado exitosamente");
+               string id = leerString("Por favor, digitar cedula del colaborador a editar:");
+               Colaborador* colaborador = gestor->buscarColaborador(id);
+               if (colaborador == nullptr) {
+                   imprimir("Colaborador no encontrado");
+                   enter();
+                   break;
+               }
+               // digitar datos a editar
+               // "" para dejarlos igual
+               string nombre = leerString("Por favor, digitar nuevo nombre (dejar en blanco para no cambiar):");
+               string cedula = leerString("Por favor, digitar nueva cedula (dejar en blanco para no cambiar):");
+               string puesto = leerString("Por favor, digitar nuevo puesto (dejar en blanco para no cambiar):");
+               float nuevoSalarioBase = leerFloat("Por favor, digitar nuevo salario base (0 para no cambiar):");
 
-               break;  
+               if (!puesto.empty()) {
+                   colaborador->setPuesto(puesto);
+               }
+
+               if (!cedula.empty()) {
+                   colaborador->setCedula(cedula);
+               }
+
+               if (!nombre.empty()) {
+                   colaborador->setNombre(nombre);
+               }
+
+               if (nuevoSalarioBase > 0) {
+                   colaborador->setSalarioBase(nuevoSalarioBase);
+               } else if (nuevoSalarioBase < 0) {
+                   throw exception("El salario base no puede ser negativo");
+               }
+
+               gestor->actualizar(colaborador);
+               imprimir("Colaborador actualizado exitosamente");
+               break;
            }  
            case 3: {  
                imprimir("Eliminando colaborador");  
@@ -77,7 +92,7 @@ void MenuColaboradores::lanzar(int posicion) {
            }  
            case 5: {  
                imprimir("Ver lista de colaboradores");  
-			 /*  IIterador* it = gestor->datos->colaboradores->getIterdor();*/
+			 //IIterador* it = gestor->datos->colaboradores->getIterdor();*/
 
                break;  
            }  
