@@ -6,8 +6,19 @@ Control::Control() {
 	menuPrincipal = new MenuPrincipal(this);
 }
 
-void Control::agregar(Colaborador* p) {
-	datos->agregar(p);
+void Control::agregar(Colaborador* c) {
+	datos->agregar(c);
+}
+
+void Control::eliminar(Colaborador* c)
+{
+	datos->eliminar(c);
+
+}
+
+void Control::actualizar(Colaborador* c)
+{
+	datos->actualizar(c);
 }
 
 

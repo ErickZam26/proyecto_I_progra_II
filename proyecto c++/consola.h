@@ -34,6 +34,7 @@ public:
 	static int leerEntero(string mensaje);
 	static int leerEntero(string mensaje, int, int);
 	static double leerDouble(string mensaje);
+	static float leerFloat(string mensaje);
 	static string leerString(string mensaje);
 	static void imprimir(string mensaje, bool = true);
 	static void enter();

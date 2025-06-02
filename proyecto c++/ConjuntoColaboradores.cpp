@@ -8,6 +8,24 @@ void ConjuntoColaboradores::agregar(Colaborador* c) {
     listaColaboradores->agregar(c);
 }
 
+void ConjuntoColaboradores::eliminar(Colaborador* c)
+{
+    listaColaboradores->remover(c);
+}
+
+void ConjuntoColaboradores::actualizar(Colaborador* c)
+{
+	Colaborador* colaboradorExistente = Buscar(c->getCedula());
+	if (colaboradorExistente) {
+		colaboradorExistente->setNombre(c->getNombre());
+		colaboradorExistente->setPuesto(c->getPuesto());
+		colaboradorExistente->setSalarioBase(c->getSalarioBase());
+	}
+	else {
+		throw exception("Colaborador no encontrado para actualizar");
+	}
+}
+
 //double ConjuntoColaboradores::promedioHora() const {
 //    double suma = 0;
 //    double total = 0;

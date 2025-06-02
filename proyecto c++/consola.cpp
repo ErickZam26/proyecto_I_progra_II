@@ -118,6 +118,26 @@ double consola::leerDouble(string mensaje) {
 	}
 }
 
+float consola::leerFloat(string mensaje) {
+	float numero;
+	while (true) {
+		cout << mensaje;
+		cin >> numero;
+		if (cin.fail()) {
+			// Entrada no es un float
+			cout << "Error: Debe ingresar un número válido." << endl;
+			// Limpiar estado de error
+			cin.clear();
+			// Ignorar la entrada inválida
+			cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		}
+		else {
+			// Correcto, salir del ciclo
+			cin.ignore(numeric_limits<streamsize>::max(), '\n'); // limpiar el resto
+			return numero;
+		}
+	}
+}
 		string consola::leerString(string mensaje) {
 			cout << mensaje;
 			string entrada;

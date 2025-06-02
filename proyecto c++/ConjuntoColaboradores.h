@@ -8,6 +8,8 @@ private:
 public:
 	ConjuntoColaboradores();
 	virtual void agregar(Colaborador*);
+	virtual void eliminar(Colaborador*);
+	virtual void actualizar(Colaborador*);
 	//virtual double promedioHora() const;
 	virtual IIterador* getIterdor()const;
 	virtual string toString() const override;

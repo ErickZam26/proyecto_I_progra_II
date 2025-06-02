@@ -20,3 +20,13 @@ void Modelo::agregar(Colaborador* c) {
 Colaborador* Modelo::buscarColaborador(string cedula) {
 	return colaboradores->Buscar(cedula);
 }
+
+void Modelo::eliminar(Colaborador* c)
+{
+	colaboradores->eliminar(c);
+}
+
+void Modelo::actualizar(Colaborador* c)
+{
+	colaboradores->actualizar(c);
+}
