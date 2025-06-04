@@ -1,6 +1,6 @@
 #include "SubmenuIngresos.h"
 
-inline SubmenuIngresos::SubmenuIngresos(Control* _gestor) : consola() {
+SubmenuIngresos::SubmenuIngresos(Control* _gestor) : consola() {
 	gestor = _gestor;
 	setTitulo("GESTION DE INGRESOS");
 	setInstrucciones("Por favor, leer con cuidado las siguientes opciones.");
@@ -9,7 +9,7 @@ inline SubmenuIngresos::SubmenuIngresos(Control* _gestor) : consola() {
 	agregarOpcion(new OpcionMenu("Regresar al menú principal"));
 }
 
-inline void SubmenuIngresos::lanzar(int posicion) {
+void SubmenuIngresos::lanzar(int posicion) {
 	switch (posicion) {
 	case 1:
 		imprimir("Agregando Ingreso Fijo...");

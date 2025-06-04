@@ -6,6 +6,8 @@ Control::Control() {
 	menuPrincipal = new MenuPrincipal(this);
 	menuArchivos = new MenuArchivos(this);
 	menuPlanilla = new MenuPlanilla(this);
+	submenuDeducciones = new SubmenuDeducciones(this);
+	submenuIngresos = new SubmenuIngresos(this);
 
 }
 
@@ -45,5 +47,13 @@ void Control::mostrarMenuArchivos() {
 
 void Control::mostrarMenuPlanilla() {
 	menuPlanilla->show();
+}
+
+void Control::mostrarSubmenuDeducciones() {
+	submenuDeducciones->show();
+}
+
+void Control::mostrarSubmenuIngresos() {
+	submenuIngresos->show();
 }
 

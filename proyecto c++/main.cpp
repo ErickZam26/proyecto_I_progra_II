@@ -18,12 +18,8 @@
 
 
 int main(const int, char* []) {
-	/*	int opcion;*/
 	
-	/*do
-	{
-	*/
-	
+
 	try {
 		Control* controlAplicacion = new Control();
 		controlAplicacion->mostrarMenuPrincipal();

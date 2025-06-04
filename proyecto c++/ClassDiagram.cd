@@ -161,13 +161,6 @@
       <FileName>Modelo.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Control" Collapsed="true">
-    <Position X="33.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>ABAAAAAEAAAAEMAEQAAACACAAAAAAACAIAAADAIAAAA=</HashCode>
-      <FileName>Control.h</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="FactoryDeduccion" Collapsed="true">
     <Position X="28.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
