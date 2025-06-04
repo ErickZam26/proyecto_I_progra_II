@@ -132,6 +132,7 @@
     <ClCompile Include="Bonificaciones.cpp" />
     <ClCompile Include="CCSS_Deduccion.cpp" />
     <ClCompile Include="Colaborador.cpp" />
+    <ClCompile Include="Colilla.cpp" />
     <ClCompile Include="ConjuntoColaboradores.cpp" />
     <ClCompile Include="consola.cpp" />
     <ClCompile Include="Control.cpp" />
@@ -166,7 +167,8 @@
     <ClCompile Include="ObjectAdaptador.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="OpcionMenu.cpp" />
-    <ClCompile Include="PlanillaColaborador.cpp" />
+    <ClCompile Include="SubmenuDeducciones.cpp" />
+    <ClCompile Include="SubmenuIngresos.cpp" />
     <ClCompile Include="TipoDeducciones.cpp" />
     <ClCompile Include="TipoIngreso.cpp" />
   </ItemGroup>
@@ -176,6 +178,7 @@
     <ClInclude Include="Bonificaciones.h" />
     <ClInclude Include="CCSS_Deduccion.h" />
     <ClInclude Include="Colaborador.h" />
+    <ClInclude Include="Colilla.h" />
     <ClInclude Include="ConjuntoColaboradores.h" />
     <ClInclude Include="consola.h" />
     <ClInclude Include="Control.h" />
@@ -212,7 +215,8 @@
     <ClInclude Include="Nomina.h" />
     <ClInclude Include="ObjectAdaptador.h" />
     <ClInclude Include="OpcionMenu.h" />
-    <ClInclude Include="PlanillaColaborador.h" />
+    <ClInclude Include="SubmenuDeducciones.h" />
+    <ClInclude Include="SubmenuIngresos.h" />
     <ClInclude Include="TipoDeducciones.h" />
     <ClInclude Include="TipoIngreso.h" />
   </ItemGroup>

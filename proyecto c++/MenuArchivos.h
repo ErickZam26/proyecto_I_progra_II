@@ -8,13 +8,13 @@ private:
 public:
     MenuArchivos(Control* _gestor);
     void lanzar(int posicion);
+//
+//private:
+//    void exportarPlanillaPorColaborador();
+//    void exportarPlanillaPorPeriodo();
+//    void exportarTodasLasPlanillas();
+//    void mostrarReporteEnPantalla();
 
-private:
-    void exportarPlanillaPorColaborador();
-    void exportarPlanillaPorPeriodo();
-    void exportarTodasLasPlanillas();
-    void mostrarReporteEnPantalla();
-    void configurarRutaExportacion();
 };
 
 // Opciones del MenuArchivos:
@@ -22,6 +22,6 @@ private:
 // 2. Exportar planilla de un período específico
 // 3. Exportar todas las planillas
 // 4. Mostrar reporte en pantalla
-// 5. Configurar ruta de exportación
+
 // 6. Regresar al menú principal
 

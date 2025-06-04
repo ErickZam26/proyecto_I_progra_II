@@ -37,6 +37,9 @@
     <Filter Include="Ingresos">
       <UniqueIdentifier>{a827ebbf-c26e-4215-af5c-2dc6e2bd195f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\Utilidades">
+      <UniqueIdentifier>{3e946a27-4140-4b67-9017-2602a92b3b84}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -159,11 +162,17 @@
     <ClCompile Include="MenuArchivos.cpp">
       <Filter>Archivos de origen\Menus</Filter>
     </ClCompile>
-    <ClCompile Include="PlanillaColaborador.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
     <ClCompile Include="Nomina.cpp">
       <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Colilla.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="SubmenuDeducciones.cpp">
+      <Filter>Archivos de origen\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="SubmenuIngresos.cpp">
+      <Filter>Archivos de origen\Menus</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -176,28 +185,10 @@
     <ClInclude Include="consola.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Iobjeto.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjectAdaptador.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="Nodo.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="Lista.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="IColeccion.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="IIterador.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="IEnumerable.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="IteradorLista.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="Control.h">
@@ -293,11 +284,35 @@
     <ClInclude Include="MenuPlanilla.h">
       <Filter>Archivos de encabezado\Menus</Filter>
     </ClInclude>
-    <ClInclude Include="PlanillaColaborador.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="Nomina.h">
       <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Colilla.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="IColeccion.h">
+      <Filter>Archivos de encabezado\Utilidades</Filter>
+    </ClInclude>
+    <ClInclude Include="IEnumerable.h">
+      <Filter>Archivos de encabezado\Utilidades</Filter>
+    </ClInclude>
+    <ClInclude Include="Iobjeto.h">
+      <Filter>Archivos de encabezado\Utilidades</Filter>
+    </ClInclude>
+    <ClInclude Include="IteradorLista.h">
+      <Filter>Archivos de encabezado\Utilidades</Filter>
+    </ClInclude>
+    <ClInclude Include="IIterador.h">
+      <Filter>Archivos de encabezado\Utilidades</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectAdaptador.h">
+      <Filter>Archivos de encabezado\Utilidades</Filter>
+    </ClInclude>
+    <ClInclude Include="SubmenuIngresos.h">
+      <Filter>Archivos de encabezado\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="SubmenuDeducciones.h">
+      <Filter>Archivos de encabezado\Menus</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

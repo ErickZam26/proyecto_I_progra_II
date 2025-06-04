@@ -1,315 +1,308 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Archivos" Collapsed="true">
-    <Position X="24.75" Y="0.5" Width="1.5" />
+    <Position X="30" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAABAAQAAAAAAAAAAAAIAAAAAgAAAAAQAAAAAIAQA=</HashCode>
       <FileName>Archivos.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="adminArch" Collapsed="true">
-    <Position X="23" Y="0.5" Width="1.5" />
+    <Position X="28.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>adminArch.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Bonificacion" Collapsed="true">
-    <Position X="23.25" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Bonificacion.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Deduccion" Collapsed="true">
-    <Position X="6.5" Y="8.5" Width="1.5" />
+  <Class Name="Deduccion">
+    <Position X="7" Y="0.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAACAABAAAIAIAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Deduccion.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DeduccionEmbargos" Collapsed="true">
-    <Position X="1" Y="9.75" Width="1.5" />
+  <Class Name="DeduccionEmbargos">
+    <Position X="1" Y="3.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAABAAAAAIAAAAAgAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>DeduccionEmbargos.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DeduccionFija" Collapsed="true">
-    <Position X="3.25" Y="9.75" Width="1.5" />
+  <Class Name="DeduccionFija">
+    <Position X="3.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAABACAAAIAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>DeduccionFija.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DeduccionMaternidad" Collapsed="true">
-    <Position X="5.5" Y="9.75" Width="1.5" />
+  <Class Name="DeduccionMaternidad">
+    <Position X="5.75" Y="3.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAABAAAAAIAAAAAAAAAAAAAAAIAAAAAAAAAIAAAA=</HashCode>
       <FileName>DeduccionMaternidad.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DeduccionPorcentual" Collapsed="true">
-    <Position X="10" Y="9.75" Width="1.5" />
+  <Class Name="DeduccionPorcentual">
+    <Position X="10.75" Y="3.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAgAABAAAAAIAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
       <FileName>DeduccionPorcentual.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DeduccionRenta" Collapsed="true">
-    <Position X="12.25" Y="9.75" Width="1.5" />
+  <Class Name="DeduccionRenta">
+    <Position X="13.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAABAAAAAIAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
       <FileName>DeduccionRenta.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DeduccionConcretaBuilder" Collapsed="true">
-    <Position X="3.5" Y="5.75" Width="1.5" />
+  <Class Name="DeduccionConcretaBuilder">
+    <Position X="3.5" Y="11.25" Width="2.25" />
     <TypeIdentifier>
       <HashCode>gACAgQgECAAAAiAgERAIAAJggBAAQAAAAAAAAAQAAAA=</HashCode>
       <FileName>DeduccionConcretaBuilder.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DeduccionDirector" Collapsed="true">
-    <Position X="28.25" Y="0.5" Width="1.5" />
+    <Position X="28.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAIACAAAAA4ACMCAAAAAAEAAAAAAAAAAAEAABAAAA=</HashCode>
       <FileName>DeduccionDirector.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="DeduccionesBuilder" Collapsed="true">
-    <Position X="3.5" Y="4.5" Width="1.5" />
+  <Class Name="DeduccionesBuilder">
+    <Position X="3.5" Y="6.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>gACAASgEAAAAAiAAERAIAAZAAAAAQAAAAAAAAAAAAAA=</HashCode>
       <FileName>DeduccionesBuilder.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="IColeccion" Collapsed="true">
-    <Position X="18.5" Y="5" Width="1.5" />
+  <Class Name="IColeccion">
+    <Position X="14.5" Y="18.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AFAAAAAAAAAAAAAAAIAAQAABAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IColeccion.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="IEnumerable" Collapsed="true">
-    <Position X="6.25" Y="5" Width="1.5" />
+  <Class Name="IEnumerable">
+    <Position X="8.25" Y="19.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
       <FileName>IEnumerable.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="IIterador" Collapsed="true">
-    <Position X="0.5" Y="4.5" Width="1.5" />
+  <Class Name="IIterador">
+    <Position X="0.5" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
       <FileName>IIterador.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Iobjeto" Collapsed="true">
-    <Position X="10.25" Y="0.5" Width="1.5" />
+  <Class Name="Iobjeto">
+    <Position X="11.25" Y="16.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAACAAAAAAAAABAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Iobjeto.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="IteradorLista" Collapsed="true">
-    <Position X="0.5" Y="5.75" Width="1.5" />
+  <Class Name="IteradorLista">
+    <Position X="0.5" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAABBAAAAAAAAAAAAAAAAAAEAAAAAAAAAIAAAA=</HashCode>
       <FileName>IteradorLista.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Lista" Collapsed="true">
-    <Position X="10.25" Y="6.25" Width="1.5" />
+  <Class Name="Lista">
+    <Position X="10" Y="21" Width="2" />
     <TypeIdentifier>
       <HashCode>AFAAAAAAAEAAAAIAAIAgRIABAAAAAAAAAAAAAgAAAAA=</HashCode>
       <FileName>Lista.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ListaColaboradores" Collapsed="true">
-    <Position X="26.5" Y="1.5" Width="1.5" />
+    <Position X="31.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAAAABAAAAAAAAAACAgAAAgAAAAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>ListaColaboradores.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Nodo" Collapsed="true">
-    <Position X="2.5" Y="3.25" Width="1.5" />
+  <Class Name="Nodo">
+    <Position X="2.75" Y="21" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAEAAAAAAAEAAAAAAAEAAAAAAAAEAAAAABAQAAAAEA=</HashCode>
       <FileName>Nodo.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NodoColaborador" Collapsed="true">
-    <Position X="23" Y="2.5" Width="1.5" />
+    <Position X="28.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAASAAAAAAAAAAQAAAAAAAAAAYAAQAgABAAAAAAAAAA=</HashCode>
       <FileName>NodoColaborador.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ObjectAdaptador" Collapsed="true">
-    <Position X="10.25" Y="1.75" Width="1.5" />
+  <Class Name="ObjectAdaptador">
+    <Position X="11.25" Y="18.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAACAAAAAAAAABAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ObjectAdaptador.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="consola" Collapsed="true">
-    <Position X="12.5" Y="3.25" Width="1.5" />
+  <Class Name="consola">
+    <Position X="13.5" Y="21" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAwCAABAAAAEAABAAAAgQAACIIABAQAEAAAgAA=</HashCode>
       <FileName>consola.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Modelo" Collapsed="true">
-    <Position X="28.25" Y="1.5" Width="1.5" />
+    <Position X="33.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABABAAAAAAAAAAAEACAAAAAAAAAAAAAEAAgADAAAAAA=</HashCode>
       <FileName>Modelo.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Control" Collapsed="true">
-    <Position X="26.5" Y="0.5" Width="1.5" />
+    <Position X="33.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAEAAAAEMAEQAAACACAAAAAAACAIAAADAIAAAA=</HashCode>
       <FileName>Control.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FactoryDeduccion" Collapsed="true">
-    <Position X="23" Y="1.5" Width="1.5" />
+    <Position X="28.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
       <FileName>FactoryDeduccion.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="OpcionMenu" Collapsed="true">
-    <Position X="4.75" Y="3.25" Width="1.5" />
+  <Class Name="OpcionMenu">
+    <Position X="5" Y="21" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAEAAAAAAEAAAAAA=</HashCode>
       <FileName>OpcionMenu.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CCSS_Deduccion" Collapsed="true">
-    <Position X="7.75" Y="9.75" Width="1.5" />
+  <Class Name="CCSS_Deduccion">
+    <Position X="8.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAABQAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CCSS_Deduccion.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Colaborador" Collapsed="true">
-    <Position X="18.25" Y="3.25" Width="1.5" />
+  <Class Name="Colaborador">
+    <Position X="19.75" Y="21" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AgABEAAAAgBBAACAAAAAxAAIAAAAAACAAAAIAEAAAAQ=</HashCode>
       <FileName>Colaborador.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ConjuntoColaboradores" Collapsed="true">
-    <Position X="20.5" Y="3.25" Width="1.5" />
+  <Class Name="ConjuntoColaboradores">
+    <Position X="22" Y="21" Width="2" />
     <TypeIdentifier>
       <HashCode>ABAAAAEAAAAAAAAEAAAABgABAAAAAAQAAAAACCAAAAA=</HashCode>
       <FileName>ConjuntoColaboradores.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="MenuColaboradores" Collapsed="true">
-    <Position X="11.5" Y="4.75" Width="1.5" />
+  <Class Name="MenuColaboradores">
+    <Position X="12.25" Y="26.25" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAQAAAAAAAAAAAAgAAAAAAAAAAAAAAAACAAAAA=</HashCode>
       <FileName>MenuColaboradores.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="MenuDeducciones" Collapsed="true">
-    <Position X="25" Y="1.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>MenuDeducciones.h</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="MenuPrincipal" Collapsed="true">
-    <Position X="9.25" Y="4.75" Width="1.5" />
+  <Class Name="MenuPrincipal">
+    <Position X="10" Y="26.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAQAAAAAAAAAACAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MenuPrincipal.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Bonificaciones" Collapsed="true">
-    <Position X="0.75" Y="12.75" Width="1.5" />
+  <Class Name="Bonificaciones">
+    <Position X="16.75" Y="16.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAABAAAQAAAACAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Bonificaciones.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="HorasDobles" Collapsed="true">
-    <Position X="5.25" Y="12.75" Width="1.5" />
+  <Class Name="HorasDobles">
+    <Position X="21.25" Y="16.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAIEAAAAAAAAA=</HashCode>
       <FileName>HorasDobles.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="HorasExtra" Collapsed="true">
-    <Position X="7.5" Y="12.75" Width="1.5" />
+  <Class Name="HorasExtra">
+    <Position X="23.5" Y="16.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAACAAAABAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
       <FileName>HorasExtra.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="HorasFeriado" Collapsed="true">
-    <Position X="9.75" Y="12.75" Width="1.5" />
+  <Class Name="HorasFeriado">
+    <Position X="25.75" Y="16.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAABAAgAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>HorasFeriado.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="HorasOrdinarias" Collapsed="true">
-    <Position X="3" Y="12.75" Width="1.5" />
+  <Class Name="HorasOrdinarias">
+    <Position X="19" Y="16.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABCAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
       <FileName>HorasOrdinarias.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Ingresos" Collapsed="true">
-    <Position X="5.25" Y="11.5" Width="1.5" />
+  <Class Name="Ingresos">
+    <Position X="19.75" Y="13.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAACAAAAAAAAACAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Ingresos.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="IngresosFactory" Collapsed="true">
-    <Position X="24.75" Y="1.5" Width="1.5" />
+    <Position X="30" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>FactoryIngresos.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="MenuArchivos" Collapsed="true">
-    <Position X="16" Y="4.75" Width="1.5" />
+  <Class Name="MenuArchivos">
+    <Position X="17.5" Y="26.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAQAEBAAAAAAAAAgFAAAAAAAASAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAQAABAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MenuArchivos.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="MenuPlanilla" Collapsed="true">
-    <Position X="13.75" Y="4.75" Width="1.5" />
+  <Class Name="MenuPlanilla">
+    <Position X="14.75" Y="26.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAQAAABAAAAAABEgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MenuPlanilla.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PlanillaColaborador" Collapsed="true">
-    <Position X="24.75" Y="2.5" Width="1.5" />
+  <Class Name="Nomina" Collapsed="true">
+    <Position X="30" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AGAAAAIACAgBIKCICAAAAAAAAIAAAAgAQCAAIAwBAEM=</HashCode>
-      <FileName>PlanillaColaborador.h</FileName>
+      <HashCode>AGAAAAIACAgBIKCICAAAAAAAQIAAAAgAQCAAIAwBAEE=</HashCode>
+      <FileName>Nomina.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Colilla" Collapsed="true">
+    <Position X="31.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAABAAAAAAEAAAAAAAAAAAEA=</HashCode>
+      <FileName>Colilla.h</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="TipoDeducciones" Collapsed="true">
-    <Position X="23" Y="3.75" Width="1.5" />
+    <Position X="28.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QAEAAAAAAAgAIAAAAAAAAAAAAAAAAAAAACAAAQAAAAA=</HashCode>
       <FileName>TipoDeducciones.h</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="TipoIngreso" Collapsed="true">
-    <Position X="24.75" Y="3.75" Width="1.5" />
+    <Position X="30" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAqAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>TipoIngreso.h</FileName>

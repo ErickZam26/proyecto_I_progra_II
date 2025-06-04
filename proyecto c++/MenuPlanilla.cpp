@@ -16,7 +16,7 @@ MenuPlanilla::MenuPlanilla(Control* _gestor) : consola() {
 
 void MenuPlanilla::lanzar(int posicion)
 {
-	try {
+	/*try {
 		do
 		{
 			switch (posicion) {
@@ -53,5 +53,5 @@ void MenuPlanilla::lanzar(int posicion)
 		imprimir(ex.what());
 	}
 	enter();
-	this->show();
+	this->show();*/
 }

@@ -4,6 +4,15 @@
 #include "MenuPrincipal.h"
 #include "MenuArchivos.h"
 #include "MenuPlanilla.h"
+#include "SubmenuDeducciones.h"
+#include "SubmenuIngresos.h"
+
+class MenuArchivos;
+class MenuColaboradores;
+class MenuPrincipal;
+class MenuPlanilla;
+class submenuDeducciones;
+class submenuIngresos;
 
 
 class Control {
@@ -12,7 +21,10 @@ private:
 	MenuColaboradores* menuColaboradores;
 	MenuPrincipal* menuPrincipal;
 	MenuPlanilla* menuPlanilla;       
-	MenuArchivos* menuArchivos;        
+	MenuArchivos* menuArchivos;
+	submenuDeducciones* submenuDeducciones;
+	submenuIngresos* submenuIngresos;
+
 public:
 	Control();
 	virtual void agregar(Colaborador*);
@@ -28,7 +40,8 @@ public:
 	virtual void mostrarMenuColaborador();
 	virtual void mostrarMenuArchivos();
 	virtual void mostrarMenuPlanilla();
-
+	virtual void mostrarSubmenuDeducciones(Colaborador* colaborador);
+	virtual void mostrarSubmenuIngresos(Colaborador* colaborador);
 
 };
 
