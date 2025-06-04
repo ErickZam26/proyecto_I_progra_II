@@ -155,8 +155,9 @@
     <ClCompile Include="IteradorLista.cpp" />
     <ClCompile Include="Lista.cpp" />
     <ClCompile Include="ListaColaboradores.cpp" />
+    <ClCompile Include="MenuArchivos.cpp" />
     <ClCompile Include="MenuColaboradores.cpp" />
-    <ClCompile Include="MenuDeducciones.cpp" />
+    <ClCompile Include="MenuPlanilla.cpp" />
     <ClCompile Include="MenuPrincipal.cpp" />
     <ClCompile Include="Modelo.cpp" />
     <ClCompile Include="Nodo.cpp" />
@@ -164,6 +165,7 @@
     <ClCompile Include="ObjectAdaptador.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="OpcionMenu.cpp" />
+    <ClCompile Include="PlanillaColaborador.cpp" />
     <ClCompile Include="TipoDeducciones.cpp" />
     <ClCompile Include="TipoIngreso.cpp" />
   </ItemGroup>
@@ -199,14 +201,16 @@
     <ClInclude Include="IteradorLista.h" />
     <ClInclude Include="Lista.h" />
     <ClInclude Include="ListaColaboradores.h" />
+    <ClInclude Include="MenuArchivos.h" />
     <ClInclude Include="MenuColaboradores.h" />
-    <ClInclude Include="MenuDeducciones.h" />
+    <ClInclude Include="MenuPlanilla.h" />
     <ClInclude Include="MenuPrincipal.h" />
     <ClInclude Include="Modelo.h" />
     <ClInclude Include="Nodo.h" />
     <ClInclude Include="NodoColaborador.h" />
     <ClInclude Include="ObjectAdaptador.h" />
     <ClInclude Include="OpcionMenu.h" />
+    <ClInclude Include="PlanillaColaborador.h" />
     <ClInclude Include="TipoDeducciones.h" />
     <ClInclude Include="TipoIngreso.h" />
   </ItemGroup>

@@ -1,0 +1,27 @@
+#pragma once
+#include "consola.h"
+#include "Control.h"
+class MenuArchivos : public consola {
+private:
+    Control* gestor;
+
+public:
+    MenuArchivos(Control* _gestor);
+    void lanzar(int posicion);
+
+private:
+    void exportarPlanillaPorColaborador();
+    void exportarPlanillaPorPeriodo();
+    void exportarTodasLasPlanillas();
+    void mostrarReporteEnPantalla();
+    void configurarRutaExportacion();
+};
+
+// Opciones del MenuArchivos:
+// 1. Exportar planilla de un colaborador específico
+// 2. Exportar planilla de un período específico
+// 3. Exportar todas las planillas
+// 4. Mostrar reporte en pantalla
+// 5. Configurar ruta de exportación
+// 6. Regresar al menú principal
+

@@ -126,9 +126,6 @@
     <ClCompile Include="MenuPrincipal.cpp">
       <Filter>Archivos de origen\Menus</Filter>
     </ClCompile>
-    <ClCompile Include="MenuDeducciones.cpp">
-      <Filter>Archivos de origen\Menus</Filter>
-    </ClCompile>
     <ClCompile Include="TipoDeducciones.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
@@ -154,6 +151,15 @@
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="TipoIngreso.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuPlanilla.cpp">
+      <Filter>Archivos de origen\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuArchivos.cpp">
+      <Filter>Archivos de origen\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanillaColaborador.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
@@ -251,9 +257,6 @@
     <ClInclude Include="MenuPrincipal.h">
       <Filter>Archivos de encabezado\Menus</Filter>
     </ClInclude>
-    <ClInclude Include="MenuDeducciones.h">
-      <Filter>Archivos de encabezado\Menus</Filter>
-    </ClInclude>
     <ClInclude Include="TipoDeducciones.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
@@ -279,6 +282,15 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="TipoIngreso.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuArchivos.h">
+      <Filter>Archivos de encabezado\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuPlanilla.h">
+      <Filter>Archivos de encabezado\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="PlanillaColaborador.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
