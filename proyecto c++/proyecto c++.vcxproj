@@ -162,6 +162,7 @@
     <ClCompile Include="Modelo.cpp" />
     <ClCompile Include="Nodo.cpp" />
     <ClCompile Include="NodoColaborador.cpp" />
+    <ClCompile Include="Nomina.cpp" />
     <ClCompile Include="ObjectAdaptador.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="OpcionMenu.cpp" />
@@ -208,6 +209,7 @@
     <ClInclude Include="Modelo.h" />
     <ClInclude Include="Nodo.h" />
     <ClInclude Include="NodoColaborador.h" />
+    <ClInclude Include="Nomina.h" />
     <ClInclude Include="ObjectAdaptador.h" />
     <ClInclude Include="OpcionMenu.h" />
     <ClInclude Include="PlanillaColaborador.h" />

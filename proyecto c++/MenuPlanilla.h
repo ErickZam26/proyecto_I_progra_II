@@ -12,17 +12,17 @@
         MenuPlanilla(Control* _gestor);
         void lanzar(int posicion);
 
-    private:
-        void establecerPeriodo();
-        void seleccionarColaboradores();
-        void gestionarIngresosPorColaborador();
-        void gestionarDeduccionesPorColaborador();
-        void calcularPlanillaPeriodo();
-        void mostrarResumenPlanilla();
+    //private:
+    //    void establecerPeriodo();
+    //    void seleccionarColaboradores();
+    //    void gestionarIngresosPorColaborador();
+    //    void gestionarDeduccionesPorColaborador();
+    //    void calcularPlanillaPeriodo();
+    //    void mostrarResumenPlanilla();
 
-        // Submenús internos
-        void submenuIngresos(Colaborador* colaborador);
-        void submenuDeducciones(Colaborador* colaborador);
+    //    // Submenús internos
+    //    void submenuIngresos(Colaborador* colaborador);
+    //    void submenuDeducciones(Colaborador* colaborador);
     };
 
     // Opciones del MenuPlanilla:
