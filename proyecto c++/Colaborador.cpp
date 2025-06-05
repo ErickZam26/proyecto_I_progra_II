@@ -51,10 +51,11 @@ void Colaborador::setSalarioBase(float _salarioBase)
 string Colaborador::toString()
 {
     stringstream s;
-    s << getNombre() << " "
-        <<getCedula() << " "
-        << getPuesto() << " "
-        << getSalarioBase() << endl;
+    s << "\n\n";
+    s << "Nombre: " << getNombre() << "\n"
+        << "ced: " << getCedula() << "\n"
+        << "Puesto: " << getPuesto() << "\n"
+        << "Salario Base: " << getSalarioBase() << "\n";
   
     return s.str();
 }

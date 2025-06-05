@@ -125,7 +125,7 @@ float consola::leerFloat(string mensaje) {
 		cin >> numero;
 		if (cin.fail()) {
 			// Entrada no es un float
-			cout << "Error: Debe ingresar un número válido." << endl;
+			cout << "Error: Debe ingresar un numero valido." << endl;
 			// Limpiar estado de error
 			cin.clear();
 			// Ignorar la entrada inválida

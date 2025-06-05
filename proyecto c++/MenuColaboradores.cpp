@@ -26,8 +26,23 @@ void MenuColaboradores::lanzar(int posicion) {
             string id = leerString("Por favor, digitar cedula:");
             string puesto = leerString("Por favor, digitar puesto:");
             float salarioBase = leerFloat("Por favor, digitar el saldo base:");
+
+            if (nombre.empty() || puesto.empty() || id.empty() || salarioBase == 0 ) {
+                throw exception("Por favor rellenar todos los campos requeridos");
+                    break;
+            }
+
+            if (gestor->buscarColaborador(id) != nullptr) {
+                throw exception("Colaborador con esa cedula ya esta registrado");
+                    break;
+
+            }
+			if (salarioBase < 0) {
+				throw exception("El salario base no puede ser negativo");
+                break;
+			}
+	
             imprimir("Creando objeto Colaborador ");
-            /* Colaborador* nuevoColab = new Colaborador(nombre, id, puesto, salarioBase);*/
             imprimir("Agregando colaborar al gestor ");
             gestor->agregar(new Colaborador(nombre, id, puesto, salarioBase));
             imprimir("Colaborador agregado exitosamente");
@@ -45,19 +60,13 @@ void MenuColaboradores::lanzar(int posicion) {
                 break;
             }
 
-            // digitar datos a editar
-            // "" para dejarlos igual
+
             string nombre = leerString("Por favor, digitar nuevo nombre (dejar en blanco para no cambiar):");
-            string cedula = leerString("Por favor, digitar nueva cedula (dejar en blanco para no cambiar):");
             string puesto = leerString("Por favor, digitar nuevo puesto (dejar en blanco para no cambiar):");
             float nuevoSalarioBase = leerFloat("Por favor, digitar nuevo salario base (0 para no cambiar):");
 
             if (!puesto.empty()) {
                 colaborador->setPuesto(puesto);
-            }
-
-            if (!cedula.empty()) {
-                colaborador->setCedula(cedula);
             }
 
             if (!nombre.empty()) {
@@ -69,6 +78,7 @@ void MenuColaboradores::lanzar(int posicion) {
             }
             else if (nuevoSalarioBase < 0) {
                 throw exception("El salario base no puede ser negativo");
+                break;
             }
 
             gestor->actualizar(colaborador);
