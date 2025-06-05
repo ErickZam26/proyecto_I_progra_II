@@ -137,13 +137,10 @@
     <ClCompile Include="consola.cpp" />
     <ClCompile Include="Control.cpp" />
     <ClCompile Include="Deduccion.cpp" />
-    <ClCompile Include="DeduccionConcretaBuilder.cpp" />
     <ClCompile Include="DeduccionDirector.cpp" />
     <ClCompile Include="DeduccionEmbargos.cpp" />
-    <ClCompile Include="DeduccionesBuilder.cpp" />
-    <ClCompile Include="DeduccionFija.cpp" />
+    <ClCompile Include="DeduccionFyP.cpp" />
     <ClCompile Include="DeduccionMaternidad.cpp" />
-    <ClCompile Include="DeduccionPorcentual.cpp" />
     <ClCompile Include="DeduccionRenta.cpp" />
     <ClCompile Include="FactoryDeduccion.cpp" />
     <ClCompile Include="FactoryIngresos.cpp" />
@@ -169,8 +166,6 @@
     <ClCompile Include="OpcionMenu.cpp" />
     <ClCompile Include="SubmenuDeducciones.cpp" />
     <ClCompile Include="SubmenuIngresos.cpp" />
-    <ClCompile Include="TipoDeducciones.cpp" />
-    <ClCompile Include="TipoIngreso.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="adminArch.h" />
@@ -183,13 +178,10 @@
     <ClInclude Include="consola.h" />
     <ClInclude Include="Control.h" />
     <ClInclude Include="Deduccion.h" />
-    <ClInclude Include="DeduccionConcretaBuilder.h" />
     <ClInclude Include="DeduccionDirector.h" />
     <ClInclude Include="DeduccionEmbargos.h" />
-    <ClInclude Include="DeduccionesBuilder.h" />
-    <ClInclude Include="DeduccionFija.h" />
+    <ClInclude Include="DeduccionFyP.h" />
     <ClInclude Include="DeduccionMaternidad.h" />
-    <ClInclude Include="DeduccionPorcentual.h" />
     <ClInclude Include="DeduccionRenta.h" />
     <ClInclude Include="FactoryDeduccion.h" />
     <ClInclude Include="FactoryIngresos.h" />

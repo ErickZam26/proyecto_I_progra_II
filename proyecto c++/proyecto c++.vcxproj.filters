@@ -90,25 +90,13 @@
     <ClCompile Include="Deduccion.cpp">
       <Filter>Archivos de origen\Deduccion</Filter>
     </ClCompile>
-    <ClCompile Include="DeduccionConcretaBuilder.cpp">
-      <Filter>Archivos de origen\Deduccion</Filter>
-    </ClCompile>
     <ClCompile Include="DeduccionDirector.cpp">
       <Filter>Archivos de origen\Deduccion</Filter>
     </ClCompile>
     <ClCompile Include="DeduccionEmbargos.cpp">
       <Filter>Archivos de origen\Deduccion</Filter>
     </ClCompile>
-    <ClCompile Include="DeduccionesBuilder.cpp">
-      <Filter>Archivos de origen\Deduccion</Filter>
-    </ClCompile>
-    <ClCompile Include="DeduccionFija.cpp">
-      <Filter>Archivos de origen\Deduccion</Filter>
-    </ClCompile>
     <ClCompile Include="DeduccionMaternidad.cpp">
-      <Filter>Archivos de origen\Deduccion</Filter>
-    </ClCompile>
-    <ClCompile Include="DeduccionPorcentual.cpp">
       <Filter>Archivos de origen\Deduccion</Filter>
     </ClCompile>
     <ClCompile Include="DeduccionRenta.cpp">
@@ -128,9 +116,6 @@
     </ClCompile>
     <ClCompile Include="MenuPrincipal.cpp">
       <Filter>Archivos de origen\Menus</Filter>
-    </ClCompile>
-    <ClCompile Include="TipoDeducciones.cpp">
-      <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="Ingresos.cpp">
       <Filter>Ingresos</Filter>
@@ -153,9 +138,6 @@
     <ClCompile Include="FactoryIngresos.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="TipoIngreso.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
     <ClCompile Include="MenuPlanilla.cpp">
       <Filter>Archivos de origen\Menus</Filter>
     </ClCompile>
@@ -173,6 +155,9 @@
     </ClCompile>
     <ClCompile Include="SubmenuIngresos.cpp">
       <Filter>Archivos de origen\Menus</Filter>
+    </ClCompile>
+    <ClCompile Include="DeduccionFyP.cpp">
+      <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -206,22 +191,10 @@
     <ClInclude Include="DeduccionDirector.h">
       <Filter>Archivos de encabezado\Deducciones</Filter>
     </ClInclude>
-    <ClInclude Include="DeduccionConcretaBuilder.h">
-      <Filter>Archivos de encabezado\Deducciones</Filter>
-    </ClInclude>
-    <ClInclude Include="DeduccionFija.h">
-      <Filter>Archivos de encabezado\Deducciones</Filter>
-    </ClInclude>
-    <ClInclude Include="DeduccionesBuilder.h">
-      <Filter>Archivos de encabezado\Deducciones</Filter>
-    </ClInclude>
     <ClInclude Include="DeduccionMaternidad.h">
       <Filter>Archivos de encabezado\Deducciones</Filter>
     </ClInclude>
     <ClInclude Include="DeduccionRenta.h">
-      <Filter>Archivos de encabezado\Deducciones</Filter>
-    </ClInclude>
-    <ClInclude Include="DeduccionPorcentual.h">
       <Filter>Archivos de encabezado\Deducciones</Filter>
     </ClInclude>
     <ClInclude Include="NodoColaborador.h">
@@ -313,6 +286,9 @@
     </ClInclude>
     <ClInclude Include="SubmenuDeducciones.h">
       <Filter>Archivos de encabezado\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="DeduccionFyP.h">
+      <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

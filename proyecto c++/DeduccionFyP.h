@@ -1,12 +1,12 @@
 #pragma once
 #include "Deduccion.h"
-class DeduccionFija : public Deduccion
+class DeduccionFyP : public Deduccion
 {
 private:
 	double monto;
-	
+	int tipo;
 public:
-	DeduccionFija(double _monto);
+	DeduccionFyP(double _monto, int _tipo, Colaborador* c);
 	virtual double calcular() const override;
 	virtual string obtenerNombre() const override;
 };

@@ -1,82 +1,81 @@
 #include "DeduccionDirector.h"
 
+DeduccionDirector::DeduccionDirector(Colaborador* c) : colab(c)
 
-void DeduccionDirector::construirEmpleado(DeduccionesBuilder& builder)
 {
-	builder.reset();
-	builder.agregarRenta();
-	builder.agregarCCSS();
-	builder.agregarMaternidad();
+	deduccion = new FactoryDeduccion();
+	ingresos = new IngresosFactory();
+}
+
+
+DeduccionDirector* DeduccionDirector::construirEmpleadoCCSS()
+{
+	deduccion->crearDeduccion(1, colab, 0, 0);
+	return this;
+}
+
+DeduccionDirector* DeduccionDirector::construirEmpleadoMaternidad()
+{
+	deduccion->crearDeduccion(3, colab, 0, 0);
+	return this;
 
 }
 
-void DeduccionDirector::construirEmpleadoCCSS(DeduccionesBuilder& builder)
+DeduccionDirector* DeduccionDirector::construirEmpleadoRenta()
 {
-	builder.reset();
-	builder.agregarCCSS();
+	deduccion->crearDeduccion(2, colab, 0, 0);
+	return this;
 }
 
-void DeduccionDirector::construirEmpleadoMaternidad(DeduccionesBuilder& builder)
+DeduccionDirector* DeduccionDirector::construirEmpleadoEmbargos()
 {
-	builder.reset();
-	builder.agregarMaternidad();
+	deduccion->crearDeduccion(4, colab, 0, 0);
+	return this;
 }
 
-void DeduccionDirector::construirEmpleadoRenta(DeduccionesBuilder& builder)
+DeduccionDirector* DeduccionDirector::construirEmpleadoFyP(const int valor1, const int valor2)
 {
-	builder.reset();
-	builder.agregarRenta();
+	deduccion->crearDeduccion(5, colab, valor1, valor2);
+	return this;
 }
 
-void DeduccionDirector::construirEmpleadoEmbargos(DeduccionesBuilder& builder)
+FactoryDeduccion* DeduccionDirector::buildDeduccionDirector()
 {
-	builder.reset();
-	builder.agregarEmbargo(2000000);
+	return deduccion;
 }
 
-void DeduccionDirector::construirEmpleadoFija(DeduccionesBuilder& builder)
+DeduccionDirector* DeduccionDirector::construirEmpleadoBonificaciones(const int valor1, const int valor2)
 {
-	builder.reset();
-	builder.agregarDeduccionFija(1000);
+	ingresos->crearIngresos(1, colab, valor1, valor2);
+	return this;
 }
 
-void DeduccionDirector::construirEmpleadoPorcentual(DeduccionesBuilder& builder)
+DeduccionDirector* DeduccionDirector::construirEmpleadoHorasDobles(const int valor)
 {
-	builder.reset();
-	builder.agregarDeduccionPorcentual(0.08);
 
+	ingresos->crearIngresos(4, colab, valor, 0);
+	return this;
 }
 
-void DeduccionDirector::construirEmpleadoBonificaciones(DeduccionesBuilder& builder)
+DeduccionDirector* DeduccionDirector::construirEmpleadoHorasExtra(const int valor)
 {
-	builder.reset();
-	builder.agregarBonificaciones();
-
+	ingresos->crearIngresos(3, colab, valor, 0);
+	return this;
 }
 
-void DeduccionDirector::construirEmpleadoHorasDobles(DeduccionesBuilder& builder)
+DeduccionDirector* DeduccionDirector::construirEmpleadoHorasFeriado(const int valor)
 {
-	builder.reset();
-	builder.agregarHorasDobles();
-
+	ingresos->crearIngresos(5, colab, valor, 0);
+	return this;
 }
 
-void DeduccionDirector::construirEmpleadoHorasExtra(DeduccionesBuilder& builder)
+DeduccionDirector* DeduccionDirector::construirEmpleadoHorasOrdinarias(const int valor)
 {
-	builder.reset();
-	builder.agregarHorasExtras();
-	
+	ingresos->crearIngresos(2, colab, valor, 0);
+	return this;
 }
 
-void DeduccionDirector::construirEmpleadoHorasFeriado(DeduccionesBuilder& builder)
+IngresosFactory* DeduccionDirector::buildIngresos()
 {
-	builder.reset();
-	builder.agregarHorasFeriado();
-
-}
-
-void DeduccionDirector::construirEmpleadoHorasOrdinarias(DeduccionesBuilder& builder)
-{
-	builder.reset();
-	builder.agregarHorasOrdinarias();
+	return ingresos;
 }

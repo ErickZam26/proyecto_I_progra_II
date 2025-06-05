@@ -2,6 +2,7 @@
 
 Colaborador::Colaborador(string _nombre, string _cedula, string _puesto, float _salarioBase) : nombre(_nombre), cedula(_cedula), puesto(_puesto), salarioBase(_salarioBase)
 {
+   
 }
 
 Colaborador::~Colaborador()

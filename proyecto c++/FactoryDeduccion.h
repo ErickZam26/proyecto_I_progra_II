@@ -1,11 +1,11 @@
 #pragma once
 #include "Deduccion.h"
-#include "TipoDeducciones.h"
-class FactoryDeduccion 
+
+class FactoryDeduccion
 {
 
 public:
-    static Deduccion* crearDeduccion(string& tipo);
-   /* static Deduccion* crearDeduccion1(TipoDeducciones& tipo);*/
+    static Deduccion* crearDeduccion(int tipo, Colaborador* c, int valor1, int valor2);
+    /* static Deduccion* crearDeduccion1(TipoDeducciones& tipo);*/
 };
 

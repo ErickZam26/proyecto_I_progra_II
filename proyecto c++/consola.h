@@ -6,7 +6,6 @@
 #include "Archivos.h"
 #include "adminArch.h"
 #include "DeduccionDirector.h"
-#include "DeduccionConcretaBuilder.h"
 #include "Lista.h"
 #include "OpcionMenu.h"
 

@@ -12,11 +12,11 @@ float HorasOrdinarias::calcularSalario() const
 	}
 	else {
 		if (horario == 2) {
-			return colab->getSalarioBase() * (8 / 7);/*mixto*/
+			return colab->getSalarioBase() * (8.0 / 7.0);/*mixto*/
 		}
 		else {
 			if (horario == 3) {
-				return colab->getSalarioBase() * (8 / 6);/*nocturno*/
+				return colab->getSalarioBase() * (8.0 / 6.0);/*nocturno*/
 			}
 
 		}
