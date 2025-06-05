@@ -16,34 +16,69 @@ SubmenuDeducciones::SubmenuDeducciones(Control* _gestor) : consola() {
 
 void SubmenuDeducciones::lanzar(int posicion)
 {
-	switch (posicion) {
-	case 1:
+	Deduccion* d = nullptr;
+	Colaborador* c = nullptr;
+	
+	if (posicion >= 1 && posicion <= 5) {
+		while (true) {
+			string cedula = leerString("Ingrese la cédula del colaborador (o escriba 'cancelar' para volver):");
+
+			if (cedula == "cancelar") {
+				this->show();
+				return;
+			}
+
+			c = gestor->buscarColaborador(cedula);
+			if (c != nullptr) {
+				break; 
+			}
+
+			imprimir("No se encontró ningún colaborador con esa cédula.");
+			enter();
+		}
+	
+	}	switch (posicion) {
+
+	case 1: {
 		// Lógica para agregar CCSS
+		d = FactoryDeduccion::crearDeduccion(1, c, 0, 0);
 		imprimir("Agregando CCSS...");
 		break;
-	case 2:
-		// Lógica para agregar Maternidad
+	}
+	case 2: {
+		d = FactoryDeduccion::crearDeduccion(3, c, 0, 0);
 		imprimir("Agregando Maternidad...");
 		break;
+	}
 	case 3:
-		// Lógica para agregar Renta
+	{
+		d = FactoryDeduccion::crearDeduccion(2, c, 0, 0);
 		imprimir("Agregando Renta...");
 		break;
-	case 4:
-		// Lógica para agregar Embargo
+	}
+	case 4: {
+		d = FactoryDeduccion::crearDeduccion(4, c, 0, 0);
 		imprimir("Agregando Embargo...");
 		break;
-	case 5:
-		// Lógica para agregar Deducción Fija
+	}
+	case 5: {
+		double deduccionFija = leerDouble("Digite el monto de deduccion que desea aplicar.");
+		d = FactoryDeduccion::crearDeduccion(5, c, 1, deduccionFija);
 		imprimir("Agregando Deducción Fija...");
+		system("pause");
 		break;
-	case 6:
-		// Lógica para agregar Deducción Porcentual
+	}
+	case 6: {
+		double deduccionPorcentual = leerDouble("Digite el porcentaje de deduccion que desea aplicar.");
+		d = FactoryDeduccion::crearDeduccion(5, c, 2, deduccionPorcentual);
 		imprimir("Agregando Deducción Porcentual...");
+		system("pause");
 		break;
-	case 7:
+	}
+	case 7: {
 		gestor->mostrarMenuPrincipal();
 		return;
+	}
 	default:
 		imprimir("Opción no válida");
 		break;
