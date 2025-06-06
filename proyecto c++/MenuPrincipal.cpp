@@ -8,8 +8,8 @@ setInstrucciones("Ver 2025.05.26");
 agregarOpcion("Ingresar al menu de registro de empleados");
 agregarOpcion("Generacion de plantilla por periodo");
 agregarOpcion("Guardar Datos");
-agregarOpcion("Ingresar al menu de deducciones");
-agregarOpcion("Ingresar al menu de ingresos");
+//agregarOpcion("Ingresar al menu de deducciones");
+//agregarOpcion("Ingresar al menu de ingresos");
 agregarOpcion("Salir del sistema");
 }
 
@@ -28,10 +28,10 @@ void MenuPrincipal::lanzar(int pos) {
 			gestor->mostrarMenuArchivos();
 			break;
 		case 4:
-			gestor->mostrarSubmenuDeducciones();
+		/*	gestor->mostrarSubmenuDeducciones();*/
 			break;
 		case 5:
-			gestor->mostrarSubmenuIngresos();
+			/*gestor->mostrarSubmenuIngresos();*/
 			break;
 		case 6:
 			cout << "Saliendo del sistema..." << endl;

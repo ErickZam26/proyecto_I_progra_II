@@ -2,6 +2,9 @@
 #include "consola.h"
 #include "Control.h"
 class MenuArchivos : public consola {
+
+
+ class control;
 private:
     Control* gestor;
 

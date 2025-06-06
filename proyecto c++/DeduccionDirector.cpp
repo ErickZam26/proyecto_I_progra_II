@@ -10,7 +10,10 @@ DeduccionDirector::DeduccionDirector(Colaborador* c) : colab(c)
 
 DeduccionDirector* DeduccionDirector::construirEmpleadoCCSS()
 {
-	deduccion->crearDeduccion(1, colab, 0, 0);
+	Deduccion* d = deduccion->crearDeduccion(1, colab, 0, 0);
+	
+	
+
 	return this;
 }
 

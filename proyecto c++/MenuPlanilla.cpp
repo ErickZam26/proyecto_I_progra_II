@@ -16,27 +16,29 @@ MenuPlanilla::MenuPlanilla(Control* _gestor) : consola() {
 
 void MenuPlanilla::lanzar(int posicion)
 {
-	/*try {
+	try {
 		do
 		{
 			switch (posicion) {
 			case 1:
-				establecerPeriodo();
+				/*establecerPeriodo();*/
 				break;
 			case 2:
-				seleccionarColaboradores();
+				/*seleccionarColaboradores();*/
 				break;
 			case 3:
-				gestionarIngresosPorColaborador();
+				/*gestionarIngresosPorColaborador();*/
+				gestor->mostrarSubmenuIngresos();
 				break;
 			case 4:
-				gestionarDeduccionesPorColaborador();
+			/*	gestionarDeduccionesPorColaborador();*/
+				gestor->mostrarSubmenuDeducciones();
 				break;
 			case 5:
-				calcularPlanillaPeriodo();
+			/*	calcularPlanillaPeriodo();*/
 				break;
 			case 6:
-				mostrarResumenPlanilla();
+				/*mostrarResumenPlanilla();*/
 				break;
 			case 7:
 				gestor->mostrarMenuPrincipal();
@@ -53,5 +55,55 @@ void MenuPlanilla::lanzar(int posicion)
 		imprimir(ex.what());
 	}
 	enter();
-	this->show();*/
+	this->show();
 }
+
+void MenuPlanilla::establecerPeriodo()
+{
+	
+	periodoActual = leerString("Ingrese el preriodo Planilla (XXXX,MM):");
+	imprimir("Preriodo establecido: " + periodoActual);
+}
+
+void MenuPlanilla::seleccionarColaboradores()
+{
+	if (periodoActual.empty()) {
+		imprimir("Primero debe establecer el periodo");
+	}
+	imprimir("Seleccionando colaboradores para " + periodoActual);
+	string cedula = leerString("Dijete el numero de cedula del colaborador.");
+
+}
+
+void MenuPlanilla::gestionarIngresosPorColaborador()
+{
+	if (periodoActual.empty() || colaboradoresDelPeriodo == nullptr) {
+		imprimir("Primero establezca periodo y seleccione colaboradores");
+	}
+
+	gestor->mostrarSubmenuIngresos();
+}
+
+void MenuPlanilla::gestionarDeduccionesPorColaborador()
+{
+	if (periodoActual.empty() || colaboradoresDelPeriodo == nullptr) {
+		imprimir("Primero establezca periodo y seleccione colaboradores");
+	}
+
+	gestor->mostrarSubmenuDeducciones();
+}
+
+void MenuPlanilla::calcularPlanillaPeriodo()
+{
+	if (periodoActual.empty() || colaboradoresDelPeriodo == nullptr) {
+		imprimir("Configuración incompleta para cálculo");
+	}
+
+	imprimir("Calculando planilla para " + periodoActual);
+}
+
+void MenuPlanilla::mostrarResumenPlanilla()
+{
+	
+}
+

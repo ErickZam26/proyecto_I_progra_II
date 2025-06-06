@@ -7,16 +7,17 @@ HorasOrdinarias::HorasOrdinarias(int h, Colaborador* c) : Ingresos(c)
 
 float HorasOrdinarias::calcularSalario() const
 {
+	double salarioHora = colab->getSalarioBase() / 8;
 	if (horario == 1) {
 		return colab->getSalarioBase();/*diurno*/
 	}
 	else {
 		if (horario == 2) {
-			return colab->getSalarioBase() * (8.0 / 7.0);/*mixto*/
+			return salarioHora * (8.0 / 7.0);/*mixto*/
 		}
 		else {
 			if (horario == 3) {
-				return colab->getSalarioBase() * (8.0 / 6.0);/*nocturno*/
+				return salarioHora * (8.0 / 6.0);/*nocturno*/
 			}
 
 		}

@@ -1,28 +1,28 @@
 #pragma once
 #include "consola.h"
 #include "Control.h"
-
+class control;
     class MenuPlanilla : public consola {
     private:
         Control* gestor;
         string periodoActual;
         Lista* colaboradoresDelPeriodo; // Lista de colaboradores para este período
-
+        bool planillaCalculada;
     public:
         MenuPlanilla(Control* _gestor);
         void lanzar(int posicion);
 
-    //private:
-    //    void establecerPeriodo();
-    //    void seleccionarColaboradores();
-    //    void gestionarIngresosPorColaborador();
-    //    void gestionarDeduccionesPorColaborador();
-    //    void calcularPlanillaPeriodo();
-    //    void mostrarResumenPlanilla();
-
-    //    // Submenús internos
-    //    void submenuIngresos(Colaborador* colaborador);
-    //    void submenuDeducciones(Colaborador* colaborador);
+    private:
+        void establecerPeriodo();
+        void seleccionarColaboradores();
+        void gestionarIngresosPorColaborador();
+        void gestionarDeduccionesPorColaborador();
+        void calcularPlanillaPeriodo();
+        void mostrarResumenPlanilla();
+      /*  Colaborador* seleccionarColaborador();*/
+        // Submenús internos
+    /*    void submenuIngresos(Colaborador* colaborador);
+        void submenuDeducciones(Colaborador* colaborador);*/
     };
 
     // Opciones del MenuPlanilla:

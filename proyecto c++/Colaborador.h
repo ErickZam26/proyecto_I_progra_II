@@ -12,7 +12,6 @@ private:
 	string cedula;
 	string puesto;
 	float salarioBase;
-	/*double salarios[12];*/
 public:
 
 	Colaborador(string nombre, string _cedula, string _puesto, float _salarioBase);
