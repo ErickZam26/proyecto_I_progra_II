@@ -21,7 +21,7 @@ void MenuArchivos::lanzar(int posicion)
         switch (posicion) {
         case 1:
 		
-			gestor->
+	
            
             imprimir("Colaboradores guardados exitosamente.");
             break;

@@ -87,7 +87,7 @@ void MenuColaboradores::lanzar(int posicion) {
             string id = leerString("Por favor, digitar cedula del colaborador a buscar:");
             Colaborador* colaborador = gestor->buscarColaborador(id);
             if (colaborador == nullptr) {
-                imprimir("Colaborador no encontrado");
+				throw exception("Colaborador no encontrado");
                 enter();
                 break;
             }
