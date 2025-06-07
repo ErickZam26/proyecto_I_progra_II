@@ -4,11 +4,10 @@ class DeduccionEmbargos :
     public Deduccion
 {
 private:
-    double monto;
+
 public:
-    DeduccionEmbargos(double _monto);
+    DeduccionEmbargos(Colaborador* c);
     virtual double calcular() const override;
     virtual string obtenerNombre() const override;
 };
-
 

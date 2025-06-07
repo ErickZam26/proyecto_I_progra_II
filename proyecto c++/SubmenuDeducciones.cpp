@@ -16,109 +16,92 @@ SubmenuDeducciones::SubmenuDeducciones(Control* _gestor) : consola() {
 
 void SubmenuDeducciones::lanzar(int posicion)
 {
-	switch (posicion) {
-	case 1:
-		// Lógica para agregar CCSS
-		imprimir("Agregando CCSS...");
-		break;
-	case 2:
-		// Lógica para agregar Maternidad
-		imprimir("Agregando Maternidad...");
-		break;
-	case 3:
-		// Lógica para agregar Renta
-		imprimir("Agregando Renta...");
-		break;
-	case 4:
-		// Lógica para agregar Embargo
-		imprimir("Agregando Embargo...");
-		break;
-	case 5:
-		// Lógica para agregar Deducción Fija
-		imprimir("Agregando Deducción Fija...");
-		break;
-	case 6:
-		// Lógica para agregar Deducción Porcentual
-		imprimir("Agregando Deducción Porcentual...");
-		break;
-	case 7:
+
+	Deduccion* d;
+	Colaborador* col = nullptr;
+	bool operacionCancelada = false;
+	if (posicion >= 1 && posicion <= 6) {
+		while (true) {
+			string cedula = leerString("Ingrese la cedula del colaborador (o escriba 'cancelar' para volver):");
+
+			if (cedula == "cancelar") {
+				operacionCancelada = true;
+				break;
+			}
+
+			col = gestor->buscarColaborador(cedula);
+
+			if (col) {
+				//Builder director(col);
+
+				switch (posicion) {
+
+				case 1: {
+					director.agregarDeduccion(1, 0, 0);
+					imprimir("Agregando CCSS...");
+					break;
+				}
+				case 2: {
+					director.agregarDeduccion(2, 0, 0);
+					/*d = FactoryDeduccion::crearDeduccion(3, col, 0, 0);*/
+					imprimir("Agregando Maternidad...");
+					break;
+				}
+				case 3:
+				{
+
+					director.agregarDeduccion(3, 0, 0);
+					/*	d = FactoryDeduccion::crearDeduccion(2, col, 0, 0);*/
+					imprimir("Agregando Renta...");
+					break;
+				}
+				case 4: {
+					director.agregarDeduccion(4, 0, 0);
+					/*d = FactoryDeduccion::crearDeduccion(4, col, 0, 0);*/
+					imprimir("Agregando Embargo...");
+					break;
+				}
+				case 5: {
+					int deduccionFija = leerEntero("Digite el monto Fijo de deduccion que desea aplicar.");
+					director.agregarDeduccion(5, 1, deduccionFija);
+					/*d = FactoryDeduccion::crearDeduccion(5, col, 1, deduccionFija);*/
+					imprimir("Agregando Deducción Fija...");
+					system("pause");
+					break;
+				}
+				case 6: {
+					//Parametro para que no se pasa de un 0 a 100% 
+					double deduccionPorcentual = leerDouble("Digite el porcentaje de deduccion que desea aplicar.");
+					director.agregarDeduccion(5, 2, deduccionPorcentual);
+					/*	d = FactoryDeduccion::crearDeduccion(5, col, 2, deduccionPorcentual);*/
+					imprimir("Agregando Deducción Porcentual...");
+					system("pause");
+					break;
+				}
+				}
+				break;
+			}
+			else {
+				imprimir("No se encontro ningun colaborador con esa cedula.");
+				enter();
+				int opcion = leerEntero("Desea intentar nuevamente?\n1. Si\n2. No (Volver al menu)", 1, 2);
+				if (opcion == 2) {
+					operacionCancelada = true;
+					break;
+				}
+			}
+		}
+	}
+	else if (posicion == 7) {
 		gestor->mostrarMenuPrincipal();
 		return;
-	default:
-		imprimir("Opción no válida");
-		break;
 	}
-	enter();
-	this->show();
+	if (operacionCancelada) {
+		enter();
+		this->show();
+	}
+	else {
+		enter();
+		this->show();
+	}
 }
-
-
-
-//void consola::submenu2()
-//{
-//	if (colab == nullptr) {
-//		cout << "Debe registrar un colaborador primero(opcion 1)." << endl;
-//		system("pause");
-//		return;
-//
-//	}
-//
-//	/*DeduccionConcretaBuilder builder;*/
-//	DeduccionDirector director;
-//
-//	int opcion;
-//	do {
-//		cout << "\n--- SUBMENU DEDUCCIONES ---\n";
-//		cout << "1. Agregar CCSS\n";
-//		cout << "2. Agregar Maternidad\n";
-//		cout << "3. Agregar Renta\n";
-//		cout << "4. Agregar Embargo\n";
-//		cout << "5. Agregar Deducción Fija\n";
-//		cout << "6. Agregar Deducción Porcentual\n";
-//		cout << "0. Salir y aplicar deducciones\n";
-//		cout << "Seleccione una opcion: ";
-//		cin >> opcion;
-//		switch (opcion) {
-//		case 1:
-//			director.construirEmpleadoCCSS(builder);
-//			
-//			cout << "CCSS agregado." << endl;
-//			system("pause");
-//			system("cls");
-//			break;
-//		case 2:
-//			director.construirEmpleadoMaternidad(builder);
-//			break;
-//		case 3:
-//			director.construirEmpleadoRenta(builder);
-//			system("pause");	
-//			system("cls");
-//			cout << "Renta agregado." << endl;
-//			break;
-//		case 4:
-//			director.construirEmpleadoEmbargos(builder);
-//			break;
-//		case 5:
-//			director.construirEmpleadoFija(builder);
-//			break;
-//		case 6:
-//			director.construirEmpleadoPorcentual(builder);
-//			break;
-//		case 0:
-//			break;
-//		default:
-//			cout << "Opción no válida.\n";
-//			break;
-//		}
-//
-//	} while (opcion != 0);
-//
-//	Deduccion** deducciones = builder.obtenerResultado();
-//	int cantidad = builder.obtenerCantidad();
-//	
-//
-//
-//	cout << "Deducciones aplicadas al colaborador." << endl;
-//	system("pause");
-//}
-

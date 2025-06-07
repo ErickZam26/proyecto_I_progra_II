@@ -5,7 +5,7 @@ Bonificaciones::Bonificaciones(int t, float m, Colaborador* c) : Ingresos(c)
 	tipo = t;
 }
 
-float Bonificaciones::calcularSalario() const
+double Bonificaciones::calcularSalario() const
 {
 	if (tipo == 1) {
 		return colab->getSalarioBase();/*monto fijo*/

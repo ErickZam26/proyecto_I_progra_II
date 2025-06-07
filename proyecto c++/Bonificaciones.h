@@ -5,5 +5,5 @@ private:
     float monto;
 public:
     Bonificaciones(int t, float m, Colaborador* c);
-    virtual float calcularSalario() const override;
+    virtual double calcularSalario() const override;
 };

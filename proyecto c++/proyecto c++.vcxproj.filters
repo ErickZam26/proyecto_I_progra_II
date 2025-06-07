@@ -40,15 +40,21 @@
     <Filter Include="Archivos de encabezado\Utilidades">
       <UniqueIdentifier>{3e946a27-4140-4b67-9017-2602a92b3b84}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\Archivos">
+      <UniqueIdentifier>{fa4206d1-8365-486b-8291-47cc0aac60c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\Archivos">
+      <UniqueIdentifier>{658f61c5-a574-497d-bb3e-6d34a39d8faa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Horas">
+      <UniqueIdentifier>{00bd8dec-d32a-4151-ac04-f4e4c051902f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de origen\Horas">
+      <UniqueIdentifier>{2d61011b-6ad2-412e-8dc3-3f83f2421434}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="Archivos.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="adminArch.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="consola.cpp">
@@ -88,9 +94,6 @@
       <Filter>Archivos de origen\Colaborador</Filter>
     </ClCompile>
     <ClCompile Include="Deduccion.cpp">
-      <Filter>Archivos de origen\Deduccion</Filter>
-    </ClCompile>
-    <ClCompile Include="DeduccionConcretaBuilder.cpp">
       <Filter>Archivos de origen\Deduccion</Filter>
     </ClCompile>
     <ClCompile Include="DeduccionDirector.cpp">
@@ -135,18 +138,6 @@
     <ClCompile Include="Ingresos.cpp">
       <Filter>Ingresos</Filter>
     </ClCompile>
-    <ClCompile Include="HorasOrdinarias.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="HorasFeriado.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="HorasExtra.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="HorasDobles.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
     <ClCompile Include="Bonificaciones.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
@@ -174,14 +165,32 @@
     <ClCompile Include="SubmenuIngresos.cpp">
       <Filter>Archivos de origen\Menus</Filter>
     </ClCompile>
+    <ClCompile Include="Archivos.cpp">
+      <Filter>Archivos de origen\Archivos</Filter>
+    </ClCompile>
+    <ClCompile Include="adminArch.cpp">
+      <Filter>Archivos de origen\Archivos</Filter>
+    </ClCompile>
+    <ClCompile Include="Builder.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="DeduccionFyP.cpp">
+      <Filter>Archivos de origen\Deduccion</Filter>
+    </ClCompile>
+    <ClCompile Include="HorasDobles.cpp">
+      <Filter>Archivos de origen\Horas</Filter>
+    </ClCompile>
+    <ClCompile Include="HorasExtra.cpp">
+      <Filter>Archivos de origen\Horas</Filter>
+    </ClCompile>
+    <ClCompile Include="HorasFeriado.cpp">
+      <Filter>Archivos de origen\Horas</Filter>
+    </ClCompile>
+    <ClCompile Include="HorasOrdinarias.cpp">
+      <Filter>Archivos de origen\Horas</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Archivos.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="adminArch.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="consola.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
@@ -204,9 +213,6 @@
       <Filter>Archivos de encabezado\Deducciones</Filter>
     </ClInclude>
     <ClInclude Include="DeduccionDirector.h">
-      <Filter>Archivos de encabezado\Deducciones</Filter>
-    </ClInclude>
-    <ClInclude Include="DeduccionConcretaBuilder.h">
       <Filter>Archivos de encabezado\Deducciones</Filter>
     </ClInclude>
     <ClInclude Include="DeduccionFija.h">
@@ -257,18 +263,6 @@
     <ClInclude Include="Ingresos.h">
       <Filter>Ingresos</Filter>
     </ClInclude>
-    <ClInclude Include="HorasOrdinarias.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="HorasFeriado.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="HorasExtra.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
-    <ClInclude Include="HorasDobles.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="Bonificaciones.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
@@ -313,6 +307,30 @@
     </ClInclude>
     <ClInclude Include="SubmenuDeducciones.h">
       <Filter>Archivos de encabezado\Menus</Filter>
+    </ClInclude>
+    <ClInclude Include="adminArch.h">
+      <Filter>Archivos de encabezado\Archivos</Filter>
+    </ClInclude>
+    <ClInclude Include="Archivos.h">
+      <Filter>Archivos de encabezado\Archivos</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="DeduccionFyP.h">
+      <Filter>Archivos de encabezado\Deducciones</Filter>
+    </ClInclude>
+    <ClInclude Include="HorasExtra.h">
+      <Filter>Archivos de encabezado\Horas</Filter>
+    </ClInclude>
+    <ClInclude Include="HorasDobles.h">
+      <Filter>Archivos de encabezado\Horas</Filter>
+    </ClInclude>
+    <ClInclude Include="HorasFeriado.h">
+      <Filter>Archivos de encabezado\Horas</Filter>
+    </ClInclude>
+    <ClInclude Include="HorasOrdinarias.h">
+      <Filter>Archivos de encabezado\Horas</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

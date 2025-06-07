@@ -1,7 +1,7 @@
 #pragma once
 #include <fstream>
 #include <iostream>
-#include "ListaColaboradores.h"
+#include "ConjuntoColaboradores.h"
 
 using namespace std;
 

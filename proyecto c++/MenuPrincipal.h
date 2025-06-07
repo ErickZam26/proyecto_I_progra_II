@@ -2,7 +2,7 @@
 #include "consola.h"
 #include "Control.h"
 class Control;
-class MenuPrincipal : public consola
+class MenuPrincipal : public Consola
 {
 private:
 	Control* gestor;

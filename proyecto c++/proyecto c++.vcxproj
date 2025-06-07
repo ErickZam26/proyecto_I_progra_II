@@ -130,6 +130,7 @@
     <ClCompile Include="adminArch.cpp" />
     <ClCompile Include="Archivos.cpp" />
     <ClCompile Include="Bonificaciones.cpp" />
+    <ClCompile Include="Builder.cpp" />
     <ClCompile Include="CCSS_Deduccion.cpp" />
     <ClCompile Include="Colaborador.cpp" />
     <ClCompile Include="Colilla.cpp" />
@@ -137,11 +138,11 @@
     <ClCompile Include="consola.cpp" />
     <ClCompile Include="Control.cpp" />
     <ClCompile Include="Deduccion.cpp" />
-    <ClCompile Include="DeduccionConcretaBuilder.cpp" />
     <ClCompile Include="DeduccionDirector.cpp" />
     <ClCompile Include="DeduccionEmbargos.cpp" />
     <ClCompile Include="DeduccionesBuilder.cpp" />
     <ClCompile Include="DeduccionFija.cpp" />
+    <ClCompile Include="DeduccionFyP.cpp" />
     <ClCompile Include="DeduccionMaternidad.cpp" />
     <ClCompile Include="DeduccionPorcentual.cpp" />
     <ClCompile Include="DeduccionRenta.cpp" />
@@ -176,6 +177,7 @@
     <ClInclude Include="adminArch.h" />
     <ClInclude Include="Archivos.h" />
     <ClInclude Include="Bonificaciones.h" />
+    <ClInclude Include="Builder.h" />
     <ClInclude Include="CCSS_Deduccion.h" />
     <ClInclude Include="Colaborador.h" />
     <ClInclude Include="Colilla.h" />
@@ -183,11 +185,11 @@
     <ClInclude Include="consola.h" />
     <ClInclude Include="Control.h" />
     <ClInclude Include="Deduccion.h" />
-    <ClInclude Include="DeduccionConcretaBuilder.h" />
     <ClInclude Include="DeduccionDirector.h" />
     <ClInclude Include="DeduccionEmbargos.h" />
     <ClInclude Include="DeduccionesBuilder.h" />
     <ClInclude Include="DeduccionFija.h" />
+    <ClInclude Include="DeduccionFyP.h" />
     <ClInclude Include="DeduccionMaternidad.h" />
     <ClInclude Include="DeduccionPorcentual.h" />
     <ClInclude Include="DeduccionRenta.h" />

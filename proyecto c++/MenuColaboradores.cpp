@@ -1,6 +1,6 @@
 #include "MenuColaboradores.h" 
 
-MenuColaboradores::MenuColaboradores(Control* nuevoGestor) : consola() {
+MenuColaboradores::MenuColaboradores(Control* nuevoGestor) : Consola() {
    gestor = nuevoGestor;  
 
    setTitulo("ADMINISTRACION DE COLABORADORES");  
@@ -45,19 +45,12 @@ void MenuColaboradores::lanzar(int posicion) {
                 break;
             }
 
-            // digitar datos a editar
-            // "" para dejarlos igual
             string nombre = leerString("Por favor, digitar nuevo nombre (dejar en blanco para no cambiar):");
-            string cedula = leerString("Por favor, digitar nueva cedula (dejar en blanco para no cambiar):");
             string puesto = leerString("Por favor, digitar nuevo puesto (dejar en blanco para no cambiar):");
             float nuevoSalarioBase = leerFloat("Por favor, digitar nuevo salario base (0 para no cambiar):");
 
             if (!puesto.empty()) {
                 colaborador->setPuesto(puesto);
-            }
-
-            if (!cedula.empty()) {
-                colaborador->setCedula(cedula);
             }
 
             if (!nombre.empty()) {

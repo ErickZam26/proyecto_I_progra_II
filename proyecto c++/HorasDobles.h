@@ -7,7 +7,7 @@ private:
 public:
 
 	HorasDobles(int h, Colaborador* c);
-	virtual float calcularSalario() const override;
+	virtual double calcularSalario() const override;
 
 };
 

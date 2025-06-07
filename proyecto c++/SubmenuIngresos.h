@@ -1,7 +1,7 @@
 #pragma once
 #include "consola.h"
 #include "Control.h"
-class SubmenuIngresos : public consola
+class SubmenuIngresos : public Consola
 {
 private:
 	Control* gestor;

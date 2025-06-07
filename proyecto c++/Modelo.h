@@ -1,10 +1,14 @@
 #pragma once
 #include "ConjuntoColaboradores.h"
+#include "Archivos.h"
+#include "adminArch.h"
 
 class Modelo {
 private:
 	ConjuntoColaboradores* colaboradores;
 	static Modelo* _instancia;
+	Archivos* archivos;
+	adminArch* administrador;
 	Modelo();
 public:
 	static Modelo* getInstancia();
@@ -14,4 +18,7 @@ public:
 	virtual void eliminar(Colaborador*);
 	virtual void actualizar(Colaborador*);
 
+	//void mostrarColaboradores();
+	void guardarEnArchivo(const string& nombreArchivo = "Colaboradores.txt");
+	void cargarDesdeArchivo(const string& nombreArchivo = "Colaboradores.txt");
 };

@@ -4,7 +4,7 @@
 
 class Control;
 
-class MenuColaboradores : public consola {
+class MenuColaboradores : public Consola {
 	private:
 		Control* gestor;
 	public:

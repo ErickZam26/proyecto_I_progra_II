@@ -4,10 +4,12 @@ class DeduccionMaternidad :
     public Deduccion
 {
 private:
-    double porcentaje;
+
 public:
-    DeduccionMaternidad(double _porcentaje);
+    DeduccionMaternidad(Colaborador* c);
     virtual double calcular()  const override;
     virtual string obtenerNombre() const override;
+
 };
+
 

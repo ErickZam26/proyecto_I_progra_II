@@ -30,3 +30,22 @@ void Modelo::actualizar(Colaborador* c)
 {
 	colaboradores->actualizar(c);
 }
+
+void Modelo::guardarEnArchivo(const string& nombreArchivo)
+{
+	archivos->~Archivos();
+	archivos->abrir(2);
+	administrador->guardar(archivos, colaboradores);
+	archivos->cerrar(2);
+}
+
+void Modelo::cargarDesdeArchivo(const string& nombreArchivo)
+{
+	archivos->~Archivos();
+	archivos->abrir(1);
+	administrador->cargar(archivos, colaboradores);
+	archivos->cerrar(1);
+
+}
+
+

@@ -2,11 +2,10 @@
 #include "Colaborador.h"
 class Ingresos
 {
-protected: 
+protected:
     Colaborador* colab;
 public:
     Ingresos(Colaborador* c);
     virtual ~Ingresos() {}
-    virtual float calcularSalario() const = 0;
+    virtual double calcularSalario() const = 0;
 };
-

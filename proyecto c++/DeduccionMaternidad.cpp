@@ -1,17 +1,17 @@
 #include "DeduccionMaternidad.h"
 
-DeduccionMaternidad::DeduccionMaternidad(double _porcentaje) : porcentaje(_porcentaje)
+DeduccionMaternidad::DeduccionMaternidad(Colaborador* c) : Deduccion(c)
 {
 }
 
-double DeduccionMaternidad::calcular( ) const
+double DeduccionMaternidad::calcular() const
 {
-	double salarioColaborador = colab->getSalarioBase() * 0.5;
+    double salarioColaborador = (colab->getSalarioBase() * 4) * 0.5;
 
-	return salarioColaborador * porcentaje;
+    return salarioColaborador;
 }
 
 string DeduccionMaternidad::obtenerNombre() const
 {
-	return string("Deduccion por Maternidad");
+    return string("Deduccion por Maternidad");
 }

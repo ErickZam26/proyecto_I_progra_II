@@ -1,32 +1,31 @@
-#include "consola.h"
+#include "Consola.h"
 
-
-consola::consola() {
-	listaOpciones = new Lista();
+Consola::Consola() {
+	listaOpciones = new Lista;
 	titulo = "";
 	instrucciones = "";
 }
 
 
-void consola::setTitulo(string t) {
+void Consola::setTitulo(string t) {
 	titulo = t;
 }
 
-void consola::setInstrucciones(string i) {
+void Consola::setInstrucciones(string i) {
 	instrucciones = i;
 }
 
-void consola::agregarOpcion(string texto) {
+void Consola::agregarOpcion(string texto) {
 	listaOpciones->agregarFinal(new OpcionMenu(texto));
 }
 
 
-void consola::agregarOpcion(OpcionMenu* opcion) {
+void Consola::agregarOpcion(OpcionMenu* opcion) {
 	listaOpciones->agregarFinal(opcion);
 }
 
 
-void consola::show() {
+void Consola::show() {
 
 	limpiar();
 	cout << "==================================================" << endl;
@@ -44,11 +43,11 @@ void consola::show() {
 	stringstream r;
 	r << "Indique un numero entre 1 y " << listaOpciones->size() << "\n";
 	lanzar(leerEntero(r.str(), 1, listaOpciones->size()));
-	
+
 }
 
 
-int consola::leerEntero(string mensaje) {
+int Consola::leerEntero(string mensaje) {
 	int numero;
 	while (true) {
 		cout << mensaje;
@@ -72,7 +71,7 @@ int consola::leerEntero(string mensaje) {
 	}
 }
 
-int consola::leerEntero(string mensaje, int minimo, int maximo) {
+int Consola::leerEntero(string mensaje, int minimo, int maximo) {
 	int numero;
 	while (true) {
 		cout << mensaje;
@@ -94,7 +93,7 @@ int consola::leerEntero(string mensaje, int minimo, int maximo) {
 	}
 }
 
-double consola::leerDouble(string mensaje) {
+double Consola::leerDouble(string mensaje) {
 	double numero;
 	while (true) {
 		cout << mensaje;
@@ -118,14 +117,14 @@ double consola::leerDouble(string mensaje) {
 	}
 }
 
-float consola::leerFloat(string mensaje) {
+float Consola::leerFloat(string mensaje) {
 	float numero;
 	while (true) {
 		cout << mensaje;
 		cin >> numero;
 		if (cin.fail()) {
 			// Entrada no es un float
-			cout << "Error: Debe ingresar un número válido." << endl;
+			cout << "Error: Debe ingresar un numero valido." << endl;
 			// Limpiar estado de error
 			cin.clear();
 			// Ignorar la entrada inválida
@@ -138,33 +137,33 @@ float consola::leerFloat(string mensaje) {
 		}
 	}
 }
-		string consola::leerString(string mensaje) {
-			cout << mensaje;
-			string entrada;
-			getline(cin, entrada); // Leer toda la línea, incluyendo espacios
-			return entrada;
-		}
+string Consola::leerString(string mensaje) {
+	cout << mensaje;
+	string entrada;
+	getline(cin, entrada); // Leer toda la línea, incluyendo espacios
+	return entrada;
+}
 
 
 
 
-		void consola::imprimir(string mensaje, bool salto) {
-			cout << mensaje;
-			if (salto) {
-				cout << endl;
-			}
-		}
+void Consola::imprimir(string mensaje, bool salto) {
+	cout << mensaje;
+	if (salto) {
+		cout << endl;
+	}
+}
 
-		void consola::enter() {
-			cout << "Presione una tecla para continuar . . .";
-			cin.get();
-		}
+void Consola::enter() {
+	cout << "Presione una tecla para continuar . . .";
+	cin.get();
+}
 
-		void consola::limpiar() {
+void Consola::limpiar() {
 #ifdef _WIN32
-			system("cls");   // Windows
+	system("cls");   // Windows
 #else
-			system("clear"); // Linux/macOS
+	system("clear"); // Linux/macOS
 #endif
-		}
+}
 
