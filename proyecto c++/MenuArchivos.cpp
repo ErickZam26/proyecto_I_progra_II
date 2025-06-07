@@ -20,10 +20,9 @@ void MenuArchivos::lanzar(int posicion)
     try {
         switch (posicion) {
         case 1:
-            // Guardar colaborador
-       /*    gestor->*/
-            // revisar la misma
-            //logica pero con lista colaboradores, creo que se debe implementar una lista o realizar la logica de otra manes
+		
+			gestor->
+           
             imprimir("Colaboradores guardados exitosamente.");
             break;
 

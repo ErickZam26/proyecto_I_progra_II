@@ -18,7 +18,8 @@ public:
 	virtual void eliminar(Colaborador*);
 	virtual void actualizar(Colaborador*);
 
+
 	//void mostrarColaboradores();
-	void guardarEnArchivo(const string& nombreArchivo = "Colaboradores.txt");
-	void cargarDesdeArchivo(const string& nombreArchivo = "Colaboradores.txt");
+	virtual void guardarEnArchivo(const string& nombreArchivo = "Colaboradores.txt");
+	virtual void cargarDesdeArchivo(const string& nombreArchivo = "Colaboradores.txt");
 };

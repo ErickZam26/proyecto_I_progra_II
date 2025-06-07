@@ -26,9 +26,9 @@ void MenuColaboradores::lanzar(int posicion) {
             string id = leerString("Por favor, digitar cedula:");
             string puesto = leerString("Por favor, digitar puesto:");
             float salarioBase = leerFloat("Por favor, digitar el saldo base:");
-            imprimir("Creando objeto Colaborador ");
-            /* Colaborador* nuevoColab = new Colaborador(nombre, id, puesto, salarioBase);*/
-            imprimir("Agregando colaborar al gestor ");
+			if (nombre.empty() || id.empty() || puesto.empty() || salarioBase <= 0) {
+				throw exception("Los campos no pueden estar vacíos y el salario base debe ser mayor que cero."); }
+            imprimir("\nAgregando colaborar al gestor...");
             gestor->agregar(new Colaborador(nombre, id, puesto, salarioBase));
             imprimir("Colaborador agregado exitosamente");
             break;
@@ -39,7 +39,7 @@ void MenuColaboradores::lanzar(int posicion) {
             string id = leerString("Por favor, digitar cedula del colaborador a editar:");
             Colaborador* colaborador = gestor->buscarColaborador(id);
             if (colaborador == nullptr) {
-                imprimir("Colaborador no encontrado");
+				throw exception("Colaborador no encontrado");
                 enter();
 
                 break;
