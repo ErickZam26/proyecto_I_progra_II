@@ -5,9 +5,9 @@ HorasOrdinarias::HorasOrdinarias(int h, Colaborador* c) : Ingresos(c)
 	horario = h;
 }
 
-float HorasOrdinarias::calcularSalario() const
+double HorasOrdinarias::calcularSalario() const
 {
-	float salarioHora = colab->getSalarioBase() / 8;
+	double salarioHora = colab->getSalarioBase() / 8;
 	if (horario == 1) {
 		return colab->getSalarioBase();/*diurno*/
 	}

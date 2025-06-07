@@ -1,6 +1,6 @@
 #include "SubmenuDeducciones.h"
 
-SubmenuDeducciones::SubmenuDeducciones(Control* _gestor) : consola() {
+SubmenuDeducciones::SubmenuDeducciones(Control* _gestor) : Consola() {
 	gestor = _gestor;
 	setTitulo("GESTION DE DEDUCCIONES");
 	setInstrucciones("Por favor, leer con cuidado las siguientes opciones.");
@@ -32,17 +32,17 @@ void SubmenuDeducciones::lanzar(int posicion)
 			col = gestor->buscarColaborador(cedula);
 
 			if (col) {
-				//Builder director(col);
+				Builder director(col);
 
 				switch (posicion) {
 
 				case 1: {
-					director.agregarDeduccion(1, 0, 0);
+					//director.agregarDeduccion(1, 0, 0);
 					imprimir("Agregando CCSS...");
 					break;
 				}
 				case 2: {
-					director.agregarDeduccion(2, 0, 0);
+					//director.agregarDeduccion(2, 0, 0);
 					/*d = FactoryDeduccion::crearDeduccion(3, col, 0, 0);*/
 					imprimir("Agregando Maternidad...");
 					break;

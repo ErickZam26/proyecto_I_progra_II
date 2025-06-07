@@ -4,9 +4,9 @@ HorasFeriado::HorasFeriado(int t, Colaborador* c) : Ingresos(c)
 	tipo = t;
 }
 
-float HorasFeriado::calcularSalario() const
+double HorasFeriado::calcularSalario() const
 {
-	float salarioHora = colab->getSalarioBase() / 8;// 5000 , 4 * 
+	double salarioHora = colab->getSalarioBase() / 8;// 5000 , 4 * 
 	if (tipo == 1) {
 		return salarioHora;/*ordinario*/
 	}

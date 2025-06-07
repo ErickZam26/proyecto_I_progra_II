@@ -1,6 +1,6 @@
 #include "SubmenuIngresos.h"
 
-SubmenuIngresos::SubmenuIngresos(Control* _gestor) : onsola() {
+SubmenuIngresos::SubmenuIngresos(Control* _gestor) : Consola() {
 	gestor = _gestor;
 	setTitulo("GESTION DE INGRESOS");
 	setInstrucciones("Por favor, leer con cuidado las siguientes opciones.");
