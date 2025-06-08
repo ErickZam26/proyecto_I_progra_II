@@ -13,7 +13,7 @@ SubmenuIngresos::SubmenuIngresos(Control* _gestor) : Consola() {
 }
 
 void SubmenuIngresos::lanzar(int posicion) {
-	Ingresos* in;
+	
 	Colaborador* col = nullptr;
 	bool operacionCancelada = false;
 	if (posicion >= 1 && posicion <= 5) {
@@ -154,15 +154,15 @@ void SubmenuIngresos::lanzar(int posicion) {
 				}
 				}
 				break;
-			}
-			else {
-				imprimir("No se encontro ningun colaborador con esa cedula.");
-				enter();
-				int opcion = leerEntero("Desea intentar nuevamente?\n1. Si\n2. No (Volver al menu)", 1, 2);
-				if (opcion == 2) {
-					operacionCancelada = true;
-					break;
 				}
+	else {
+		imprimir("No se encontro ningun colaborador con esa cedula.");
+		enter();
+		int opcion = leerEntero("Desea intentar nuevamente?\n1. Si\n2. No (Volver al menu)", 1, 2);
+		if (opcion == 2) {
+			operacionCancelada = true;
+			break;
+		}
 			}
 		}
 	}

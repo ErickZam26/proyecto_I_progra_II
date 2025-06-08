@@ -11,9 +11,10 @@ void MenuPlanilla::expandirNominas()
 	nominaPeriodo = nuevo;
 }
 
-MenuPlanilla::MenuPlanilla(Control* _gestor) : Consola(), gestor(gestor), periodoActual(""),
+MenuPlanilla::MenuPlanilla(Control* _gestor) : Consola(), periodoActual(""),
 capacidedadNominas(10), numNominas(0) {
 	nominaPeriodo = new Nomina * [capacidedadNominas];
+	gestor = _gestor;
 	setTitulo("GESTION DE PLANILLAS");
 	setInstrucciones("Por favor, leer con cuidado las siguientes opciones.");
 
@@ -119,6 +120,7 @@ void MenuPlanilla::mostrarResumenPlanilla()
 //{
 //
 //	periodoActual = leerString("Ingrese el preriodo Planilla (XXXX,MM):");
+// set
 //	imprimir("Preriodo establecido: " + periodoActual);
 //}
 //

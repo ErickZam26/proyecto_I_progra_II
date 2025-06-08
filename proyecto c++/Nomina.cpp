@@ -166,7 +166,7 @@ string Nomina::generarReporte()
 
 	return ss.str();
 }
-
+// mejor por adm archivos
 void Nomina::exportarTXT(std::string nombreArchivo) {
 	std::ofstream archivo(nombreArchivo);
 	if (!archivo) {

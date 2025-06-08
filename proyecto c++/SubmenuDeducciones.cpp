@@ -37,12 +37,12 @@ void SubmenuDeducciones::lanzar(int posicion)
 				switch (posicion) {
 
 				case 1: {
-					//director.agregarDeduccion(1, 0, 0);
+					director.agregarDeduccion(1, 0, 0);
 					imprimir("Agregando CCSS...");
 					break;
 				}
 				case 2: {
-					//director.agregarDeduccion(2, 0, 0);
+					director.agregarDeduccion(2, 0, 0);
 					/*d = FactoryDeduccion::crearDeduccion(3, col, 0, 0);*/
 					imprimir("Agregando Maternidad...");
 					break;

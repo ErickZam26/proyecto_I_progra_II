@@ -42,11 +42,11 @@ void Control::mostrarMenuPrincipal() {
 }
 
 void Control::mostrarMenuArchivos() {
-	//menuArchivos->show();
+	menuArchivos->show();
 }
 
 void Control::mostrarMenuPlanilla() {
-	//menuPlanilla->show();
+	menuPlanilla->show();
 }
 
 void Control::mostrarSubmenuDeducciones() {
