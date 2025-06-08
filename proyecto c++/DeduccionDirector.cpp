@@ -1,82 +1,29 @@
 #include "DeduccionDirector.h"
-
-
-void DeduccionDirector::construirEmpleado(DeduccionesBuilder& builder)
+DeduccionDirector::DeduccionDirector(Colaborador* colab) : colaborador(colab)
 {
-	builder.reset();
-	builder.agregarRenta();
-	builder.agregarCCSS();
-	builder.agregarMaternidad();
+	deduccion = new FactoryDeduccion();
+	ingresos = new FactoryIngresos();
+}
+
+DeduccionDirector& DeduccionDirector::agregarIngreso(int opcion, int tipo, int valor)
+{ 
+	Ingresos* ingresos = FactoryIngresos::crearIngresos(opcion, colaborador, tipo, valor);
+	colaborador->agregarIngreso(ingresos);
+	return *this;
+}
+
+DeduccionDirector& DeduccionDirector::agregarDeduccion(int opcion, int tipo, int valor)
+{
+	Deduccion* deduccion = FactoryDeduccion::crearDeduccion(opcion, colaborador, tipo, valor);
+	colaborador->agregarDeduccion(deduccion);
+	return *this;
 
 }
 
-void DeduccionDirector::construirEmpleadoCCSS(DeduccionesBuilder& builder)
+void DeduccionDirector::construir()
 {
-	builder.reset();
-	builder.agregarCCSS();
+	colaborador->calcularSalarioNeto();
 }
 
-void DeduccionDirector::construirEmpleadoMaternidad(DeduccionesBuilder& builder)
-{
-	builder.reset();
-	builder.agregarMaternidad();
-}
 
-void DeduccionDirector::construirEmpleadoRenta(DeduccionesBuilder& builder)
-{
-	builder.reset();
-	builder.agregarRenta();
-}
 
-void DeduccionDirector::construirEmpleadoEmbargos(DeduccionesBuilder& builder)
-{
-	builder.reset();
-	builder.agregarEmbargo(2000000);
-}
-
-void DeduccionDirector::construirEmpleadoFija(DeduccionesBuilder& builder)
-{
-	builder.reset();
-	builder.agregarDeduccionFija(1000);
-}
-
-void DeduccionDirector::construirEmpleadoPorcentual(DeduccionesBuilder& builder)
-{
-	builder.reset();
-	builder.agregarDeduccionPorcentual(0.08);
-
-}
-
-void DeduccionDirector::construirEmpleadoBonificaciones(DeduccionesBuilder& builder)
-{
-	builder.reset();
-	builder.agregarBonificaciones();
-
-}
-
-void DeduccionDirector::construirEmpleadoHorasDobles(DeduccionesBuilder& builder)
-{
-	builder.reset();
-	builder.agregarHorasDobles();
-
-}
-
-void DeduccionDirector::construirEmpleadoHorasExtra(DeduccionesBuilder& builder)
-{
-	builder.reset();
-	builder.agregarHorasExtras();
-	
-}
-
-void DeduccionDirector::construirEmpleadoHorasFeriado(DeduccionesBuilder& builder)
-{
-	builder.reset();
-	builder.agregarHorasFeriado();
-
-}
-
-void DeduccionDirector::construirEmpleadoHorasOrdinarias(DeduccionesBuilder& builder)
-{
-	builder.reset();
-	builder.agregarHorasOrdinarias();
-}

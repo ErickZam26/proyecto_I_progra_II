@@ -7,7 +7,7 @@
 
 
 
-Ingresos* FactoryIngresos::crearIngresos(int tipo, Colaborador* colab, int valor1, float valor2) {
+Ingresos* FactoryIngresos::crearIngresos(int tipo, Colaborador* colab, int valor1, double valor2) {
     switch (tipo) {
     case 1:
         return new Bonificaciones(valor1, valor2, colab); // valor1 = tipo de bonificación, valor2 = monto

@@ -9,7 +9,8 @@ private:
 	string periodo;
 	string fecha;
 public:
-	void GenerarColilla();
+	Colilla(Nomina* _Nomina, string _fecha);
+	string GenerarColilla();
 };
 
 

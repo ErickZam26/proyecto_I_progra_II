@@ -1,4 +1,5 @@
 #include "Bonificaciones.h"
+#include "Colaborador.h"
 Bonificaciones::Bonificaciones(int t, float m, Colaborador* c) : Ingresos(c)
 {
 	monto = m;
@@ -16,4 +17,15 @@ double Bonificaciones::calcularSalario() const
 		}
 	}
 	return 0;
+}
+
+string Bonificaciones::obtenerNombre() const
+{
+	if (tipo == 1) {
+		return string("Bonificacion de monto Fijo ");
+	}
+	else {
+		return string("Bonificacion por porcentaje");
+	}
+	
 }

@@ -1,29 +1,41 @@
 #pragma once
-#include "Lista.h"
+
 #include "Colaborador.h"
+#include "Ingresos.h"
+#include "Deduccion.h"
+#include <fstream>
 class Nomina
 {
 private:
-
+    Colaborador* colaborador;
     string periodo;
-    Lista* ingresos;
-    Lista* deducciones;
+    Ingresos** ingresos;
+    Deduccion** deducciones;
+    int capacidadIngresos;
+    int numIngresos;
+    int capacidadDeducciones;
+    int numDeducciones;
+
     double salarioBruto;
     double totalDeducciones;
     double salarioNeto;
     bool calculada;
+
+    // Funciones auxiliares
+    void expandirIngresos();
+    void expandirDeducciones();
 public:
     Nomina(Colaborador* _colaborador, string _periodo);
 
     // Gestión de ingresos
-    //void agregarIngreso(Ingreso* ingreso);
+    void agregarIngreso(Ingresos* ingreso);
     void removerIngreso(int posicion);
-    Lista* getIngresos();
+    Ingresos** getIngresos(int count);
 
     // Gestión de deducciones  
-    //void agregarDeduccion(Deduccion* deduccion);
+    void agregarDeduccion(Deduccion* deduccion);
     void removerDeduccion(int posicion);
-    Lista* getDeducciones();
+    Deduccion** getDeducciones(int count);
 
     // Cálculos
     void calcular();
@@ -40,7 +52,7 @@ public:
     // Reportes
     string generarReporte();
     void exportarTXT(string nombreArchivo);
-
+    void buscarNomina();
 
 };
 

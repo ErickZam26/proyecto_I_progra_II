@@ -1,23 +1,22 @@
 #pragma once
+#include "Colaborador.h"
+#include "FactoryIngresos.h"
+#include "FactoryDeduccion.h"
 
-#include "DeduccionesBuilder.h"
 class DeduccionDirector
 {
+private:
+    Colaborador* colaborador;
+    FactoryDeduccion* deduccion;
+    FactoryIngresos* ingresos;
+
+
 public:
-	void construirEmpleado(DeduccionesBuilder& builder);
-	void construirEmpleadoCCSS(DeduccionesBuilder& builder);
-	void construirEmpleadoMaternidad(DeduccionesBuilder& builder);
-	void construirEmpleadoRenta(DeduccionesBuilder& builder);
-	void construirEmpleadoEmbargos(DeduccionesBuilder& builder);
-	void construirEmpleadoFija(DeduccionesBuilder& builder);
-	void construirEmpleadoPorcentual(DeduccionesBuilder& builder);
-	void construirEmpleadoBonificaciones(DeduccionesBuilder& builder);
-	void construirEmpleadoHorasDobles(DeduccionesBuilder& builder);
-	void construirEmpleadoHorasExtra(DeduccionesBuilder& builder);
-	void construirEmpleadoHorasFeriado(DeduccionesBuilder& builder);
-	void construirEmpleadoHorasOrdinarias(DeduccionesBuilder& builder);
+    DeduccionDirector(Colaborador* colab);
+    DeduccionDirector& agregarIngreso(int opcion, int tipo, int valor);
 
+    DeduccionDirector& agregarDeduccion(int opcion, int tipo, int valor);
 
-	
+    void construir();
 };
 

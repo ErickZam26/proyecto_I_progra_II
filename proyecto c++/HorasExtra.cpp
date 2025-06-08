@@ -1,5 +1,5 @@
 #include "HorasExtra.h"
-
+#include "Colaborador.h"
 HorasExtra::HorasExtra(int h, Colaborador* c) : Ingresos(c)
 {
 
@@ -28,4 +28,18 @@ double HorasExtra::calcularSalario() const
 		}
 	}
 	return 0;
+}
+
+string HorasExtra::obtenerNombre() const
+{
+	if (horario == 1) {
+		return string("Horas Extra Diurnas");
+	}
+	if (horario == 2) {
+		return string("Horas Extra Mixtas");
+
+	}
+	if (horario == 3) {
+		return string("Horas Extra Nocturnas");
+	}
 }

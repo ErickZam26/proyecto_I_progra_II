@@ -1,5 +1,5 @@
 #include "DeduccionMaternidad.h"
-
+#include "Colaborador.h"
 DeduccionMaternidad::DeduccionMaternidad(Colaborador* c) : Deduccion(c)
 {
 }

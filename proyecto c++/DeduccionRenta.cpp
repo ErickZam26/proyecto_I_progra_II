@@ -1,5 +1,5 @@
 #include "DeduccionRenta.h"
-
+#include "Colaborador.h"
 DeduccionRenta::DeduccionRenta(Colaborador* c) : Deduccion(c)
 {
 }

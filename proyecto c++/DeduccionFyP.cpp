@@ -1,4 +1,5 @@
 #include "DeduccionFyP.h"
+#include "Colaborador.h"
 DeduccionFyP::DeduccionFyP(double _monto, int _tipo, Colaborador* c) : monto(monto), tipo(_tipo), Deduccion(c)
 {
 }
@@ -18,5 +19,12 @@ double DeduccionFyP::calcular() const
 
 string DeduccionFyP::obtenerNombre() const
 {
-	return string("Deduccion fija o porcentual");
+	if (tipo == 1) {
+		return string("Deduccion por monto fijo");
+	}
+	else {
+
+		return string("Deduccion por porcentaje");
+	}
+	
 }

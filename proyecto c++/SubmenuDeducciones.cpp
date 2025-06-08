@@ -32,7 +32,7 @@ void SubmenuDeducciones::lanzar(int posicion)
 			col = gestor->buscarColaborador(cedula);
 
 			if (col) {
-				Builder director(col);
+				DeduccionDirector director(col);
 
 				switch (posicion) {
 

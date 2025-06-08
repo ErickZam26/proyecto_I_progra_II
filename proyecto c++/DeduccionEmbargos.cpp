@@ -1,5 +1,5 @@
 #include "DeduccionEmbargos.h"
-
+#include "Colaborador.h"
 DeduccionEmbargos::DeduccionEmbargos(Colaborador* c) : Deduccion(c)
 {
 }

@@ -4,6 +4,7 @@ Modelo* Modelo::_instancia = NULL;
 
 Modelo::Modelo() {
 	colaboradores = new ConjuntoColaboradores();
+
 }
 
 Modelo* Modelo::getInstancia() {

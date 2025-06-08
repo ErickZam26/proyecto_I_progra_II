@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -140,8 +140,6 @@
     <ClCompile Include="Deduccion.cpp" />
     <ClCompile Include="DeduccionDirector.cpp" />
     <ClCompile Include="DeduccionEmbargos.cpp" />
-    <ClCompile Include="DeduccionesBuilder.cpp" />
-    <ClCompile Include="DeduccionFija.cpp" />
     <ClCompile Include="DeduccionFyP.cpp" />
     <ClCompile Include="DeduccionMaternidad.cpp" />
     <ClCompile Include="DeduccionPorcentual.cpp" />
@@ -185,10 +183,6 @@
     <ClInclude Include="consola.h" />
     <ClInclude Include="Control.h" />
     <ClInclude Include="Deduccion.h" />
-    <ClInclude Include="DeduccionDirector.h" />
-    <ClInclude Include="DeduccionEmbargos.h" />
-    <ClInclude Include="DeduccionesBuilder.h" />
-    <ClInclude Include="DeduccionFija.h" />
     <ClInclude Include="DeduccionFyP.h" />
     <ClInclude Include="DeduccionMaternidad.h" />
     <ClInclude Include="DeduccionPorcentual.h" />

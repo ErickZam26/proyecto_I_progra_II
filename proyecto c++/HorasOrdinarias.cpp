@@ -1,5 +1,5 @@
 #include "HorasOrdinarias.h"
-
+#include "Colaborador.h"
 HorasOrdinarias::HorasOrdinarias(int h, Colaborador* c) : Ingresos(c)
 {
 	horario = h;
@@ -24,3 +24,18 @@ double HorasOrdinarias::calcularSalario() const
 	}
 	return 0;
 }
+
+string HorasOrdinarias::obtenerNombre() const
+{
+	if (horario == 1) {
+		return string("Horas Ordinarias Diurnas");
+	}
+		if (horario == 2){
+			return string("Horas Ordinarias Mixtas");
+
+	}
+		if (horario == 3) {
+			return string("Horas Ordinarias Nocturnas");
+		}
+
+};

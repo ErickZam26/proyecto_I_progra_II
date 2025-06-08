@@ -1,5 +1,5 @@
 #include "CCSS_Deduccion.h"
-
+#include "Colaborador.h"
 CCSS_Deduccion::CCSS_Deduccion(Colaborador* c) : Deduccion(c)
 {
     SEM = 0.0500;
@@ -11,8 +11,8 @@ double CCSS_Deduccion::calcular() const
 {
     if (!colab) return 0.0;
 
-    double totalDeducciones = SEM + IVM + IPT;
-    return colab->getSalarioBase() * totalDeducciones;
+    double salario = colab->getSalarioBase();
+    return (salario * SEM) + (salario * IVM) + (salario * IPT);
 }
 
 string CCSS_Deduccion::obtenerNombre() const

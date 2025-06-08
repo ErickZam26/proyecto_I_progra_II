@@ -6,7 +6,7 @@ class DeduccionPorcentual :
 private:
     double porcentaje;
 public:
-    DeduccionPorcentual(double _porcentaje);
+    DeduccionPorcentual(double _porcentaje, Colaborador* c);
     virtual double calcular() const override;
     virtual string obtenerNombre() const override;
 };

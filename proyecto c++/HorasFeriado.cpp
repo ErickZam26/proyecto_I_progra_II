@@ -1,4 +1,5 @@
 #include "HorasFeriado.h"
+#include "Colaborador.h"
 HorasFeriado::HorasFeriado(int t, Colaborador* c) : Ingresos(c)
 {
 	tipo = t;
@@ -16,4 +17,16 @@ double HorasFeriado::calcularSalario() const
 		}
 	}
 	return 0;
+}
+
+string HorasFeriado::obtenerNombre() const
+{
+	if (tipo == 1) {
+		return string("Horas Feriadas Ordinarias");
+
+	}	else{
+			return string("Horas Feriadas Extras");
+
+	}
+	
 }

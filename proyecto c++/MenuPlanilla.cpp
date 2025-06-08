@@ -1,7 +1,19 @@
 #include "MenuPlanilla.h"
 
-MenuPlanilla::MenuPlanilla(Control* _gestor) : Consola() {
-	gestor = _gestor;
+void MenuPlanilla::expandirNominas()
+{
+	capacidedadNominas *= 2;
+	Nomina** nuevo = new Nomina * [capacidedadNominas];
+	for (int i = 0; i < numNominas; i++) {
+		nuevo[i] = nominaPeriodo[i];
+	}
+	delete[] nominaPeriodo;
+	nominaPeriodo = nuevo;
+}
+
+MenuPlanilla::MenuPlanilla(Control* _gestor) : Consola(), gestor(gestor), periodoActual(""),
+capacidedadNominas(10), numNominas(0) {
+	nominaPeriodo = new Nomina * [capacidedadNominas];
 	setTitulo("GESTION DE PLANILLAS");
 	setInstrucciones("Por favor, leer con cuidado las siguientes opciones.");
 
@@ -58,52 +70,97 @@ void MenuPlanilla::lanzar(int posicion)
 	this->show();
 }
 
-void MenuPlanilla::establecerPeriodo()
+MenuPlanilla::~MenuPlanilla()
 {
-
-	periodoActual = leerString("Ingrese el preriodo Planilla (XXXX,MM):");
-	imprimir("Preriodo establecido: " + periodoActual);
+	for (int i = 0; i < numNominas; i++) {
+		delete nominaPeriodo[i];
+	}
+	delete[] nominaPeriodo;
 }
 
-void MenuPlanilla::seleccionarColaboradores()
+void MenuPlanilla::setPeriodoActual(std::string periodo)
 {
-	if (periodoActual.empty()) {
-		imprimir("Primero debe establecer el periodo");
-	}
-	imprimir("Seleccionando colaboradores para " + periodoActual);
-	string cedula = leerString("Dijete el numero de cedula del colaborador.");
-
+	periodoActual = periodo;
 }
 
-void MenuPlanilla::gestionarIngresosPorColaborador()
+void MenuPlanilla::agregarNomina(Nomina* nomina)
 {
-	if (periodoActual.empty() || colaboradoresDelPeriodo == nullptr) {
-		imprimir("Primero establezca periodo y seleccione colaboradores");
+	if (numNominas == capacidedadNominas) {
+		expandirNominas();
 	}
-
-	gestor->mostrarSubmenuIngresos();
-}
-
-void MenuPlanilla::gestionarDeduccionesPorColaborador()
-{
-	if (periodoActual.empty() || colaboradoresDelPeriodo == nullptr) {
-		imprimir("Primero establezca periodo y seleccione colaboradores");
-	}
-
-	gestor->mostrarSubmenuDeducciones();
+	nominaPeriodo[numNominas++] = nomina;
 }
 
 void MenuPlanilla::calcularPlanillaPeriodo()
 {
-	if (periodoActual.empty() || colaboradoresDelPeriodo == nullptr) {
-		imprimir("Configuración incompleta para cálculo");
+	if (periodoActual.empty()) {
+		imprimir("Primero establezca el período");
+		return;
 	}
 
-	imprimir("Calculando planilla para " + periodoActual);
+	for (int i = 0; i < numNominas; i++) {
+		nominaPeriodo[i]->calcular();
+	}
+	imprimir("Planillas calculadas para " + periodoActual);
 }
 
 void MenuPlanilla::mostrarResumenPlanilla()
 {
-
+	for (int i = 0; i < numNominas; i++) {
+		imprimir(nominaPeriodo[i]->generarReporte());
+	}
 }
+
+
+
+
+
+//void MenuPlanilla::establecerPeriodo()
+//{
+//
+//	periodoActual = leerString("Ingrese el preriodo Planilla (XXXX,MM):");
+//	imprimir("Preriodo establecido: " + periodoActual);
+//}
+//
+//void MenuPlanilla::seleccionarColaboradores()
+//{
+//	if (periodoActual.empty()) {
+//		imprimir("Primero debe establecer el periodo");
+//	}
+//	imprimir("Seleccionando colaboradores para " + periodoActual);
+//	string cedula = leerString("Dijete el numero de cedula del colaborador.");
+//
+//}
+//
+//void MenuPlanilla::gestionarIngresosPorColaborador()
+//{
+//	if (periodoActual.empty() || colaboradoresDelPeriodo == nullptr) {
+//		imprimir("Primero establezca periodo y seleccione colaboradores");
+//	}
+//
+//	gestor->mostrarSubmenuIngresos();
+//}
+//
+//void MenuPlanilla::gestionarDeduccionesPorColaborador()
+//{
+//	if (periodoActual.empty() || colaboradoresDelPeriodo == nullptr) {
+//		imprimir("Primero establezca periodo y seleccione colaboradores");
+//	}
+//
+//	gestor->mostrarSubmenuDeducciones();
+//}
+//
+//void MenuPlanilla::calcularPlanillaPeriodo()
+//{
+//	if (periodoActual.empty() || colaboradoresDelPeriodo == nullptr) {
+//		imprimir("Configuración incompleta para cálculo");
+//	}
+//
+//	imprimir("Calculando planilla para " + periodoActual);
+//}
+//
+//void MenuPlanilla::mostrarResumenPlanilla()
+//{
+//
+//}
 

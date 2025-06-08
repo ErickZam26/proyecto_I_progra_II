@@ -13,6 +13,41 @@ MenuArchivos::MenuArchivos(Control* _gestor)
     agregarOpcion(new OpcionMenu("Regresar al menú principal"));
 }
 
+//void MenuArchivos::exportarPlanillaPorColaborador()
+//{
+//    string cedula = leerString("Cédula del colaborador:");
+//    string periodo = leerString("Período (YYYY-MM):");
+//
+//     Buscar nómina en el modelo
+//    Nomina* nomina = gestor->buscarNomina(cedula, periodo);
+//    if (nomina) {
+//        std::string archivo = "planilla_" + cedula + "_" + periodo + ".txt";
+//        nomina->exportarTXT(archivo);
+//        imprimir("Planilla exportada: " + archivo);
+//    }
+//    else {
+//        imprimir("No se encontró la planilla");
+//    }
+//}
+//
+//void MenuArchivos::exportarPlanillaPorPeriodo()
+//{
+//    std::string periodo = leerString("Período (YYYY-MM):");
+//    Nomina** nominas = gestor->getNominas(periodo);
+//    int numNominas = gestor->getCantidadNominas();
+//
+//    if (numNominas > 0) {
+//        for (int i = 0; i < numNominas; i++) {
+//            std::string archivo = "planilla_" + nominas[i]->getColaborador()->getCedula() + ".txt";
+//            nominas[i]->exportarTXT(archivo);
+//        }
+//        imprimir(std::to_string(numNominas) + " planillas exportadas");
+//    }
+//    else {
+//        imprimir("No hay planillas para ese período");
+//    }
+//}
+
 void MenuArchivos::lanzar(int posicion)
 {
     bool operacionCancelada = false;
@@ -27,7 +62,7 @@ void MenuArchivos::lanzar(int posicion)
             break;
 
         case 2:
-
+            
             imprimir("Planillas guardadas exitosamente.");
             break;
 

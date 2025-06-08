@@ -6,7 +6,7 @@
 #include "Archivos.h"
 #include "Lista.h"
 #include "adminArch.h"
-#include "Builder.h"
+#include "DeduccionDirector.h"
 #include "OpcionMenu.h"
 
 class Consola

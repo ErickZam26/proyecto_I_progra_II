@@ -1,6 +1,6 @@
 #include "DeduccionPorcentual.h"
-
-DeduccionPorcentual::DeduccionPorcentual(double _porcentaje): porcentaje(_porcentaje)
+#include "Colaborador.h"
+DeduccionPorcentual::DeduccionPorcentual(double _porcentaje, Colaborador* c): Deduccion(c), porcentaje(_porcentaje)
 {
 }
 

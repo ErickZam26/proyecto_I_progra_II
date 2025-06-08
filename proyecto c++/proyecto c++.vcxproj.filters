@@ -102,12 +102,6 @@
     <ClCompile Include="DeduccionEmbargos.cpp">
       <Filter>Archivos de origen\Deduccion</Filter>
     </ClCompile>
-    <ClCompile Include="DeduccionesBuilder.cpp">
-      <Filter>Archivos de origen\Deduccion</Filter>
-    </ClCompile>
-    <ClCompile Include="DeduccionFija.cpp">
-      <Filter>Archivos de origen\Deduccion</Filter>
-    </ClCompile>
     <ClCompile Include="DeduccionMaternidad.cpp">
       <Filter>Archivos de origen\Deduccion</Filter>
     </ClCompile>
@@ -206,19 +200,7 @@
     <ClInclude Include="Modelo.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="DeduccionEmbargos.h">
-      <Filter>Archivos de encabezado\Deducciones</Filter>
-    </ClInclude>
     <ClInclude Include="Deduccion.h">
-      <Filter>Archivos de encabezado\Deducciones</Filter>
-    </ClInclude>
-    <ClInclude Include="DeduccionDirector.h">
-      <Filter>Archivos de encabezado\Deducciones</Filter>
-    </ClInclude>
-    <ClInclude Include="DeduccionFija.h">
-      <Filter>Archivos de encabezado\Deducciones</Filter>
-    </ClInclude>
-    <ClInclude Include="DeduccionesBuilder.h">
       <Filter>Archivos de encabezado\Deducciones</Filter>
     </ClInclude>
     <ClInclude Include="DeduccionMaternidad.h">

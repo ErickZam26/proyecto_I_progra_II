@@ -25,7 +25,7 @@ void SubmenuIngresos::lanzar(int posicion) {
 			}
 			col = gestor->buscarColaborador(cedula);
 			if (col) {
-				Builder director(col);
+				DeduccionDirector director(col);
 				switch (posicion) {
 				case 1: {
 					imprimir("Digite el tipo de Bonificacion desea agregar (1.Fija,2.Porcentual");

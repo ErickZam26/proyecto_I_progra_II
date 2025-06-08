@@ -8,5 +8,6 @@ private:
 public:
     HorasFeriado(int t, Colaborador* c);
     virtual double calcularSalario() const override;
+    virtual string obtenerNombre() const override;
 };
  

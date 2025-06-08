@@ -2,7 +2,7 @@
 #include "ConjuntoColaboradores.h"
 #include "Archivos.h"
 #include "adminArch.h"
-
+#include "Nomina.h"
 class Modelo {
 private:
 	ConjuntoColaboradores* colaboradores;

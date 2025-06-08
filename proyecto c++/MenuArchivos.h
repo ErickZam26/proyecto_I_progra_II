@@ -1,7 +1,7 @@
 #pragma once
 #include "consola.h"
 #include "Control.h"
-
+class Control;
 class MenuArchivos : public Consola {
 private:
     Control* gestor;
@@ -9,6 +9,8 @@ private:
 public:
     MenuArchivos(Control* _gestor);
     void lanzar(int posicion);
+    void exportarPlanillaPorColaborador();
+    void exportarPlanillaPorPeriodo();
 //
 //private:
 //    void exportarPlanillaPorColaborador();
